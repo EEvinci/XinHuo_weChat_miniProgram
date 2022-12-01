@@ -1,0 +1,120 @@
+/* 标题 */
+.test_title{
+    text-align: center;
+    line-height: 52rpx;
+    background-color: white;
+    height: 140rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+}
+
+.title_left{
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    font-size: 32rpx;
+}
+
+.title_right{
+    height: 70rpx;
+    width: 120rpx;
+    background-color: #D8412B;
+    color: white;
+    font-size: 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16rpx;
+}
+
+.realtitle{
+    font-size: 42rpx;
+}
+
+/* 题型 */
+.topic_title{
+    height: 120rpx;
+    margin: 0 6% 0 4%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.topic_type{
+    font-size: 40rpx;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic_number{
+    position: absolute;
+    right: 90rpx;
+    color: #de644f;
+    font-size: 36rpx;
+    font-weight: 600;
+}
+
+/* 答题 */
+
+.topic{
+    margin: -10rpx 4% 0 4%;
+    width: 92%;
+    height: 900rpx;
+}
+
+.topic_description{
+    font-size: 36rpx;
+    margin-bottom: 50rpx;
+}
+
+.topic_option{
+    margin-top: 20rpx;
+    font-size: 32rpx;
+}
+
+.my-choosebox {
+    font-size: 34rpx;
+    margin: 0 5% 40rpx 5%;
+    height: 110rpx;
+    display: flex;
+    align-items: center;
+    border-radius: 20rpx;
+    border: 3px solid #de644f;
+    color: #de644f;
+    font-weight: 600;
+}
+
+.radio-group{
+    display: block;
+}
+
+.radio-group radio{
+    margin-left: 10rpx;
+}
+
+.margin-left-xs{
+    margin-left: 15rpx;
+}
+
+.topic_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100rpx;
+    width: 180rpx;
+    color: #de644f;
+    font-weight: 600;
+    font-size: 40rpx;
+    position: absolute;
+    right: 9%;
+    border-radius: 20rpx;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 10px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}

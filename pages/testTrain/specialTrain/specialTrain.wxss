@@ -1,0 +1,40 @@
+.special_list{
+    padding-top: 30rpx;
+    margin: 30rpx 5% 0 5%;
+    height: 230rpx;
+    background-color: white;
+    border-radius: 10rpx;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.special_button{
+    background-color: #de644f;
+    color: white;
+    width: 140rpx;
+    height: 56rpx;
+    font-size: 26rpx;
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+    margin: 0rpx 20rpx 20rpx 0;
+}
+
+.special_time{
+    margin-left: 30rpx;
+    font-size: 24rpx;
+    color: #bcbcbc;
+}
+
+.special_title{
+    margin: 0 30rpx 0 30rpx;
+    font-size: 40rpx;
+    font-weight: 800;
+    height: 120rpx;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

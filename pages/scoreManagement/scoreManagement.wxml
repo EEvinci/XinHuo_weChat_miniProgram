@@ -1,0 +1,139 @@
+<view class="root">
+    <view class="top_title">{{title[currentIndex]}}</view>
+    <view class="nav_g">
+        <!-- Tab布局 -->
+        <view class='navBox'>
+            <view class='titleBox' bindtap='titleClick' data-idx='0'>
+                <text class="{{0 == currentIndex ? 'fontColorBox' : ''}}">积分获取</text>
+                <hr class="{{0 == currentIndex ? 'lineBox' : 'notLineBox'}}" />
+            </view>
+            <view class='titleBox' bindtap='titleClick' data-idx='1'>
+                <text class="{{1 == currentIndex ? 'fontColorBox1' : ''}}">积分商城</text>
+                <hr class="{{1 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+            </view>
+            <view class='titleBox' bindtap='titleClick' data-idx='2'>
+                <text class="{{2 == currentIndex ? 'fontColorBox2' : ''}}">历史记录</text>
+                <hr class="{{2 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+            </view>
+        </view>
+        <image class="img" src="{{image[currentIndex]}}"></image>
+        <!-- 根据不同的界面进行渲染 -->
+        <block wx:if="{{currentIndex == 0}}">
+            <view class="center_content">
+                <view class="total_score">总积分：{{totalScore}}</view>
+                <view class="sign_in" bindtap="goToSign">
+                    <text>签到领积分</text>
+                </view>
+            </view>
+        </block>
+        <block wx:if="{{currentIndex == 1}}">
+            <view class="content_detail">
+                <view class="center_content_simple">
+                    <view class="total_score_simple">{{totalScore}}</view>
+                    <view class="exchage_record">兑换记录</view>
+                </view>
+                <view class="notice">
+                    <image class="notice_left" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/a7ee4ff9-c5bb-4b0c-80f8-990f8e365426.png"></image>
+                    <text>多学多做多得积分，兑换更多精美党史文创</text>
+                    <image class="notice_right" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/baf0124f-439a-43b1-b519-6ac0c46d4653.png"></image>
+                </view>
+            </view>
+        </block>
+        <block wx:if="{{currentIndex == 2}}">
+            <text class="content_title">天行健，君子以自强不息\n地势坤，君子以厚德载物</text>
+        </block>
+    </view>
+    <swiper class='swiperTtemBox' bindchange='pagechange' current='{{currentIndex}}'>
+        <!-- 积分获取 -->
+        <swiper-item class='swiperTtemBox'>
+            <view class="score_title">「积分规则」</view>
+            <view class="score_rules">
+                <view class="rules_detail">
+                    <view class="rules_image">
+                        <image  src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/2b2c086d-eccc-4390-b558-c73b7d09ccf3.png"></image>
+                    </view>
+                    
+                    <view class="rules_content">
+                        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/b29c8195-8e4d-430c-b8dd-8cc04448ae7a.png"></image>
+                        <view class="rules_wenzi">
+                            <text class="wenzi_title">党史答题\n</text>
+                            <text class="wenzi_explain">每次答题可以获得5积分\n最高可以获得30积分</text>
+                        </view>
+                    </view>
+                    <view class="rules_button">去答题</view>
+                </view>
+            </view>
+            <view class="score_rules">
+                <view class="rules_detail">
+                    <view class="rules_image">
+                        <image style="height: 80rpx;width: 80rpx;" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/af1a04b3-466e-4622-a7e3-622215c3e453.png"></image>
+                    </view>
+                    
+                    <view class="rules_content">
+                        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/b29c8195-8e4d-430c-b8dd-8cc04448ae7a.png"></image>
+                        <view class="rules_wenzi">
+                            <text class="wenzi_title">学习分享\n</text>
+                            <text class="wenzi_explain">每次分享都能获得6积分\n连续分享最高可以获得30积分</text>
+                        </view>
+                    </view>
+                    <view class="rules_button">去分享</view>
+                </view>
+            </view>
+            <view class="score_rules">
+                <view class="rules_detail">
+                    <view class="rules_image">
+                        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/0e9a0c88-e66b-4fd9-89d7-fa5df949e2d3.png"></image>
+                    </view>
+                    
+                    <view class="rules_content">
+                        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/b29c8195-8e4d-430c-b8dd-8cc04448ae7a.png"></image>
+                        <view class="rules_wenzi">
+                            <text class="wenzi_title">看党做\n</text>
+                            <text class="wenzi_explain">观看一则新闻可以获得6积分\n最高可以获得30积分</text>
+                        </view>
+                    </view>
+                    <view class="rules_button">去看看</view>
+                </view>
+            </view>
+            <view class="score_rules">
+                <view class="rules_detail">
+                    <view class="rules_image">
+                        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/560c6e30-27bd-4f8b-a7d5-6f326eb7d97c.png"></image>
+                    </view>
+                    
+                    <view class="rules_content">
+                        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/b29c8195-8e4d-430c-b8dd-8cc04448ae7a.png"></image>
+                        <view class="rules_wenzi">
+                            <text class="wenzi_title">听党说\n</text>
+                            <text class="wenzi_explain">收听播报达5分钟即可获得5积分\n最高可以获得30积分</text>
+                        </view>
+                    </view>
+                    <view class="rules_button">去听听</view>
+                </view>
+            </view>
+        </swiper-item>
+        <!-- 积分商城 -->
+        <swiper-item class='swiperTtemBox'>
+            <view class="score_store">
+                <view class="store_list" wx:for="{{storeList}}" wx:key="index">
+                    <image class="list_left" src="{{item.image}}"></image>
+                    <view class="list_detail">
+                        <text class="list_name">{{item.name}}\n</text>
+                        <text class="list_value">{{item.value}}积分</text>
+                    </view>
+                    <view class="list_right">去看看</view>
+                </view>
+            </view>
+        </swiper-item>
+        <!-- 历史记录 -->
+        <swiper-item class='swiperTtemBox'>
+            <view class="record_detail" wx:for="{{records}}" wx:key="index">
+                <view class="record_left">
+                    <view class="left_action">{{item.action}}</view>
+                    <view class="left_time">{{recordsTime[index]}}</view>
+                </view>
+                <view class="record_right">{{item.value}}积分</view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

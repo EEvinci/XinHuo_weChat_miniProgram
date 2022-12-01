@@ -1,0 +1,2 @@
+<!--pages/detail/fourperiod/fourperiod.wxml-->
+<text>{{Article[0].content}}</text>

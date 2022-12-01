@@ -1,0 +1,17 @@
+<!-- 答题结果 -->
+<view class="page">
+  <view class="page_title">考试结果</view>
+  <view class="padding">
+    <view class='page-head'>
+      <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/251aec1d-6911-4f76-894b-4dafc6c2e8a8.jpg"></image>
+      <view class='page-score'>
+        <text class="score-num text-red text-bold">{{totalScore}}分</text>
+      </view>
+    </view>
+    <view class='page-footer'>
+      <view class="flex padding flex-direction">
+        <button bindtap="toIndex" hover-class="other-button-hover" class="cu-btn line-red round lg margin-top" style="margin-top:100rpx;width: 450rpx;height: 80rpx;margin-bottom: 20rpx;border-radius: 40rpx;box-shadow: 3px 5px 5px #ccc;background-color: #D8412B;color: white;"> 返回首页 </button>
+      </view>
+    </view>
+  </view>
+</view>

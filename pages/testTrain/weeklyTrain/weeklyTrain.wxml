@@ -1,0 +1,19 @@
+<view class="root">
+    <block wx:for="{{monthTitles}}" wx:for-item="monthvalue">
+        <view class="month_title">{{monthvalue}}月</view>
+        <view class="weekly_list">
+            <block wx:for="{{trainList}}" wx:for-item="value" wx:for-index="currentIndex" >
+                <block wx:if="{{value.month == monthvalue}}" >
+                    <view class="{{countList[cnt0] == (currentIndex) || countList[cnt1] == (currentIndex) || countList[cnt2] == (currentIndex) || countList[cnt3] == (currentIndex) || countList[cnt4] == (currentIndex) || countList[cnt5] == (currentIndex) || countList[cnt6] == (currentIndex) || countList[cnt7] == (currentIndex) || countList[cnt8] == (currentIndex) || countList[cnt9] == (currentIndex) || countList[cnt10] == (currentIndex) || countList[cnt11] == (currentIndex)  ? 'list_detail1' : 'list_detail'}}">
+                    <!-- <view class="list_detail"></view> -->
+                        <view class="list_title">{{value.title}}</view>
+                        <view class="list_bottom">
+                            <view class="isDone">未作答</view>
+                            <view class="list_button" bindtap="goToWeeklyTrain" data-paperid="{{value.id}}">开始答题</view>
+                        </view>
+                    </view>
+                </block>
+            </block>
+        </view>
+    </block>
+</view>

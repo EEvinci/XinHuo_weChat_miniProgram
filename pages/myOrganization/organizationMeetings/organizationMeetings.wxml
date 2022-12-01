@@ -1,0 +1,17 @@
+<view class="root">
+    <view class="my_meeting">
+        <view class="title" bindtap="moreMeetings">
+            <text class="title_text">组织会议</text>
+        </view>
+        <block wx:for="{{meetings}}" wx:key="index">
+            <view class="meeting_content">
+                <image class="meeting_left" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1e43e620-1acf-4362-bbef-10cda269045e.jpeg"></image>
+                <view class="meeting_right">
+                    <view class="meeting_title">{{item.title}}</view>
+                    <view class="meeting_type">{{item.type}}</view>
+                    <view class="meeting_detail">{{meetingsTimes[index]}}<text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;</text>会议人数:{{item.participants}}/{{item.totalparicipants}}</view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

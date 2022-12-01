@@ -1,0 +1,290 @@
+Page {
+  /* 全局样式 */
+  background: rgb(244, 245, 249);
+  height: 100%;
+  position: fixed;
+}
+
+.fontColorBox,
+.fontColorBox1,
+.fontColorBox2 {
+  /* 文字默认颜色 */
+  color: #BD3124;
+}
+
+.navBox {
+  /* 顶部tab盒子样式 */
+  width: 100%;
+  height: 108rpx;
+  background: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* 必要时拆行 */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.titleBox {
+  /* 未选中文字的样式 */
+  color: rgb(168, 170, 175);
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lineBox,
+.notLineBox {
+  /* 选中及未选中底线共同样式 */
+  width: 32rpx;
+  height: 8rpx;
+}
+
+.lineBox {
+  /* 选中底线样式 */
+  background: #BD3124;
+  margin-top: 16rpx;
+  border-radius: 4rpx;
+}
+
+.notLineBox {
+  /* 未选中底线样式 */
+  background: transparent;
+}
+
+.swiperTtemBox {
+  /* 底部内容样式 */
+  height: 100vh;
+  overflow: scroll;
+  margin: 12rpx 0rpx;
+  background: white;
+  font-size: 28rpx;
+}
+
+/* 轮播图部分 */
+.swiper_container {
+  position: fixed;
+  height: 22%;
+  width: 100%;
+}
+
+.swiper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.image_banner {
+  width: 100%;
+  height: 100%;
+}
+
+.wx-swiper-dots {
+  position: relative;
+  left: unset !important;
+  right: 38%;
+  top: 90%;
+}
+
+.wx-swiper-dots .wx-swiper-dots-horizontal {
+  margin-bottom: 0rpx;
+}
+
+/* 三个功能模块 */
+.activity_mode {
+  position: absolute;
+  margin: 10rpx 3% 0 3%;
+  top: 350rpx;
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+  /* 必要时拆行 */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.activity_mode image {
+  border-radius: 20rpx;
+  height: 100rpx;
+  width: 200rpx;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.mode_detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 文本字体分开 */
+.mode_detail text {
+  position: relative;
+  z-index: 99;
+  text-align: center;
+  font-weight: 550;
+  font-size: 35rpx;
+  color: whitesmoke;
+  left: 5rpx;
+  bottom: 70rpx;
+}
+
+/* 活动广场 */
+.bighit_line {
+  margin-top: 500rpx;
+  background: #ccc;
+  opacity: 0.3;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  height: 5rpx;
+  margin-left: 8rpx;
+  margin-bottom: 30rpx;
+}
+
+.activity_line {
+  background: rgb(138, 10, 36);
+  width: 8%;
+  margin-left: 20rpx;
+  height: 6rpx;
+}
+
+.activity_title {
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  font-size: 38rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+
+.activity_area {
+  height: 300rpx;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6rpx;
+  width: 100%;
+  /* 设置下划线 */
+  border-bottom: 1px solid gray;
+}
+
+.activity_area .pic_area {
+  margin: 20rpx;
+  border-radius: 50rpx;
+  width: 40%;
+  height: 260rpx;
+  background-color: black;
+}
+
+.pictuare {
+  height: 100%;
+  width: 100%;
+  background: '';
+}
+
+.activity_area{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.activity_area .content_area {
+  flex: 1;
+  margin-left: 10rpx;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 260rpx;
+}
+
+.content_area .content_publishDate{
+  font-size: 24rpx;
+  color: #cccccc;
+}
+
+.policy_area {
+  height: 250rpx;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6rpx;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  align-items: center;
+}
+
+.policy_area .pic_area {
+  margin: 20rpx;
+  border-radius: 50rpx;
+  width: 40%;
+  height: 200rpx;
+}
+
+.policy_area .content_area {
+  flex: 1;
+  height: 200rpx;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  padding-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.policy_bighit_line {
+  /* 不加这个的话会一直存在在最上面 */
+  margin-top: 300rpx;
+  height: 5rpx;
+  margin-bottom: 20rpx;
+}
+
+/* 各学院模块 */
+.page_index_menu {
+  /* background-color: saddlebrown; */
+  position: absolute;
+  margin-top: 10rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* 必要时拆行 */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page_index_menu .menu {
+  width: 33.3%;
+  /*width:50%;每行显示两列，width:33.3%;每行显示三列*/
+  height: auto;
+  text-align: center;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  /* border: 1rpx solid #efef11;
+  box-sizing: border-box;相当于把border都算在box里面了 */
+}
+
+.page_index_menu image {
+  border-radius: 90rpx;
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.img_menu {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+}
+
+/* 文本字体分开 */
+.img_menu text {
+  margin-top: 10rpx;
+}
+
+.bottom1 {height: 200rpx;}
+.bottom2 {height: 600rpx;}

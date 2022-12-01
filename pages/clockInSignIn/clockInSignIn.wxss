@@ -1,0 +1,140 @@
+.sign_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200rpx;
+}
+
+.sign_word {
+    font-size: 42rpx;
+    font-weight: 600;
+    color: #d81e06;
+    margin: 20rpx;
+}
+
+.sign_button {
+    font-size: 32rpx;
+    font-weight: 600;
+    border-radius: 20rpx;
+    height: 80rpx;
+    width: 180rpx;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rpx;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 2px 5px, rgba(0, 0, 0, 0.13) 0px 3px 3px;
+}
+
+/* 打卡日历 */
+.all {
+    border-top: 2rpx solid #ccc;
+    background-color: white;
+    margin: 20rpx 2% 100rpx 2%;
+    height: 680rpx;
+    border-radius: 20rpx;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 7px -2px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.all .bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30rpx 20rpx;
+    padding: 10rpx;
+    font-size: 36rpx;
+}
+
+.all .bar image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.all .week {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    padding-bottom: 20rpx;
+    margin: 10rpx 20rpx 0 20rpx;
+    font-weight: 600;
+    color: #D8412B;
+    border-bottom: 1px solid #ccc;
+}
+
+.all .days {
+    margin: 0rpx 20rpx 20rpx 20rpx;
+    padding: 10rpx;
+    border-radius: 10px;
+    background-color: white;
+    color: #D8412B;
+    font-weight: 900;
+}
+
+.all .columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.all .columns .rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.all .columns .rows .cell {
+    width: 80rpx;
+    height: 72rpx;
+    margin: 3rpx;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 打卡累计 */
+
+.count .daynumber {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.count .daynumber .day {
+    margin-top: 50rpx;
+}
+
+.count {
+    font-weight: 600;
+    margin: 120rpx 0 0 0;
+    padding: 30rpx;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #D8412B;
+    align-items: center;
+}
+
+.count .number {
+    color: #D8412B;
+    font-size: 60rpx;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fff;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20rpx;
+}
+
+.count text {
+    margin: 10rpx;
+}

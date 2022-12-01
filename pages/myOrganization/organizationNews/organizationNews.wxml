@@ -1,0 +1,13 @@
+<view class="root">
+    <view class="my_info">
+        <view class="title">
+            <text class="title_text">组织资讯</text>
+        </view>
+        <block wx:for="{{news}}" wx:key="index">
+            <view class="info_content">
+                <view class="info_title">{{item.title}}</view>
+                <view class="info_detail">{{item.author}}<text decode="true">&nbsp;&nbsp;</text>{{newsTimes[index]}}</view>
+            </view>
+        </block>
+    </view>
+</view>

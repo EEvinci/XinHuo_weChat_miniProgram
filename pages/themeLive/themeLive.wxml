@@ -1,0 +1,152 @@
+<view>
+    <!-- Tab布局 -->
+    <view class='navBox'>
+        <view class='titleBox' bindtap='titleClick' data-idx='0'>
+            <text class="{{0 == currentIndex ? 'fontColorBox' : ''}}">活动</text>
+            <hr class="{{0 == currentIndex ? 'lineBox' : 'notLineBox'}}" />
+        </view>
+        <view class='titleBox' bindtap='titleClick' data-idx='1'>
+            <text class="{{1 == currentIndex ? 'fontColorBox1' : ''}}">融媒思政</text>
+            <hr class="{{1 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+        </view>
+    </view>
+    <!-- 内容布局 -->
+    <swiper class='swiperTtemBox' bindchange='pagechange' current='{{currentIndex}}'>
+        <swiper-item class='swiperTtemBox'>
+            <!-- 轮播动画 -->
+            <view class="page_index_lunbo">
+                <view class="swiper_container">
+                    <!-- 轮播组件 -->
+                    <swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" interval="3000" duration="1000" indicator-color="#d0d0d0" indicator-active-color="#820000">
+                        <block wx:for="{{images}}" wx:key="id"></block>
+                        <!-- 每一个轮播的项目 -->
+                        <swiper-item>
+                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/6328d0f9-be12-468d-9b94-326811438be0.png"></image>
+                        </swiper-item>
+                        <swiper-item>
+                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/6ef7cfdf-d4c9-44d5-afdd-5d1ae3723b30.png"></image>
+                        </swiper-item>
+                        <swiper-item>
+                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/824d8496-fb26-4116-becd-1cb78cc33576.png"></image>
+                        </swiper-item>
+                    </swiper>
+                </view>
+            </view>
+            <!-- 三个模块 -->
+            <view class="activity_mode">
+                <view class="mode_detail" bindtap="goToNews">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/d7c14b3b-8c3c-4a9e-b739-e42c6ec51740.jpg"></image>
+                    <text>城院党建</text>
+                </view>
+                <view class="mode_detail" bindtap="goToSign">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/520e0a30-3687-4a48-92c2-c6c9ad9bb445.jpg"></image>
+                    <text>每日签到</text>
+                </view>
+                <view class="mode_detail" bindtap="goToScoreManagement">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/bdd7f403-c6e2-4c41-8690-d62472220418.jpg"></image>
+                    <text>积分商城</text>
+                </view>
+            </view> 
+            <view class="bighit_line"></view>
+            <!-- 活动广场 -->
+            <view class="activity_line"></view>
+            <view class="activity_title">活动广场</view>
+            <view class="activity_area" wx:for="{{activityDataList}}" wx:key="index" bindtap="gotodetail" data-articleid="{{item.id}}">
+                <!-- 文字区域 -->
+                <view class="content_area">
+                    <view class="content_title">{{item.title}}</view>
+                    <view class="content_publishDate">{{item.writer}}</view>
+                    <view class="content_publishDate">{{item.time}}</view>
+                </view>
+                <!-- 图片区域 -->
+                <view class="pic_area">
+                    <image class="pictuare" src="{{item.images}}" mode="aspectFill"></image>
+                </view>
+            </view>
+            <view class="bottom1"></view>
+        </swiper-item>
+        <swiper-item class='swiperTtemBox'>
+            <!-- 轮播动画 -->
+            <view class="page_index_lunbo">
+                <view class="swiper_container">
+                    <!-- 轮播组件 -->
+                    <swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" interval="3000" duration="1000" indicator-color="#d0d0d0" indicator-active-color="#820000">
+                        <block wx:for="{{images}}" wx:key="id"></block>
+                        <!-- 每一个轮播的项目 -->
+                        <swiper-item>
+                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/fe3e2ecb-97a1-4c30-805a-cb1beaa4a497.png"></image>
+                        </swiper-item>
+                        <swiper-item>
+                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/32222505-384d-4a84-8993-f6a39f1ca9a9.png"></image>
+                        </swiper-item>
+                        <swiper-item>
+                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/e7d661ee-9629-4c10-b015-acaaae84b89b.png"></image>
+                        </swiper-item>
+                    </swiper>
+                </view>
+            </view>
+            <view class="policy_bighit_line"></view>
+            <!-- 校园融媒思政 -->
+            <view class="policy_area" wx:for="{{policyDataList}}" wx:key="index" 
+            bindtap="gotodetail" data-articleid="{{item.id}}">
+                <!-- 文字区域 -->
+                <view class="content_area">
+                    <view class="content_title">{{item.title}}</view>
+                    <view class="content_publishDate">{{item.writer}}</view>
+                    <view class="content_publishDate">{{item.time}}</view>
+                </view>
+                <!-- 图片区域 -->
+                <view class="pic_area">
+                    <image class="pictuare" src="{{item.images}}" mode="scaleToFill"></image>
+                </view>
+            </view>
+            <!-- 首页六个基本页面 -->
+            <view class="page_index_menu">
+                <!-- 是否需要使用icon来创建圆形 -->
+                <view class="menu">
+                    <view class="img_menu">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/a5d9ad51-f8fd-4580-a4cc-e5ed145a0ce7.png"></image>
+                    <text>传媒与人文学院</text>
+                    </view>
+                </view>
+
+                <view class="menu">
+                    <view class="img_menu">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/5441ae9e-39aa-422a-8757-138bdc402255.png"></image>
+                    <text>工程学院</text>
+                    </view>
+                </view>
+
+                <view class="menu">
+                    <view class="img_menu">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/fc799769-216a-4402-bc40-c03fa8587c48.png"></image>
+                    <text>商学院</text>
+                    </view>
+                </view>
+
+                <view class="menu">
+                    <view class="img_menu">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/aa8096c1-3745-4431-88d2-1d210f10483a.png"></image>
+                    <text>外国语学院</text>
+                    </view>
+                </view>
+
+                <view class="menu">
+                    <view class="img_menu">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/8a519bbe-8a9b-4876-a509-b22e1a72fd42.png"></image>
+                    <text>信电学院</text>
+                    </view>
+                </view>
+
+                <view class="menu">
+                    <view class="img_menu">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/57f2ef29-1edd-4734-9aab-a62bd1bf29ac.png"></image>
+                    <text>艺术与考古学院</text>
+                    </view>
+                </view>
+
+            </view>
+            <view class="bottom2"></view>
+        </swiper-item>
+    </swiper>
+</view>

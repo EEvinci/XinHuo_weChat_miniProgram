@@ -1,0 +1,170 @@
+/* pages/myself/myself.wxss */
+.pages_myself{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title_background{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: #D8412B;
+    height: 100rpx;
+    width: 100%;
+}
+
+.myself_my{
+    margin-top: 20rpx;
+    border-radius: 30rpx;
+    height: 30%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.myself_my_header{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    width: 90%;
+}
+
+.header_icon{
+    border-radius: 50%;
+    height: 155rpx;
+    width: 155rpx;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    margin: 20rpx;
+}
+
+.myimage{
+    border-radius: 50%;
+    height: 155rpx;
+    width: 155rpx;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    margin: 20rpx;
+}
+
+.header_inf{
+    margin-top: 35rpx;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.header_text{
+    font-weight: 900;
+    font-size: 50rpx;
+}
+
+.edit{
+    margin-left: 8rpx;
+    height: 30rpx;
+    width: 30rpx;
+}
+
+.header_inf_bot{
+    margin-top: 10rpx;
+}
+
+.header_search{
+    margin-top: 20rpx;
+    height: 50rpx;
+    width: 55rpx;
+}
+
+.myself_my_bottom{
+    margin-bottom: 20rpx;
+    display: flex;
+    flex-direction: row;
+    font-size: 40rpx;
+    width: 90%;
+    text-align: center;
+}
+
+.bottom_inf1{
+    width: 50%;
+}
+
+.bottom_inf2{
+    width: 10%;
+}
+
+.bottom_inf3{
+    width: 40%;
+}
+
+
+/* 宣誓部分 */
+.myself_xuanshi{
+    text-align: center;
+    font-size: 80rpx;
+    color: white;
+    height: 200rpx;
+    margin: 30rpx 0 30rpx 0;
+    width: 90%;
+    border-radius: 30rpx;
+    /* 放在云服务台 */
+    background-image: url("https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/ace17e19-4453-43b1-974a-49e53dd5241d.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+/* 五个界面 */
+.myself_option{
+    height: 30%;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    border-radius: 30rpx;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.option_item{
+    display: flex;
+    flex-direction: row;
+}
+
+.option_img{
+    margin: 20rpx;
+    height: 50rpx;
+    width: 50rpx;
+}
+
+.option_title{
+    margin: 15rpx;
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+    font-size: 30rpx;
+}
+
+.line{
+    border: 1px solid #ccc;
+    margin-left: 18rpx;
+    width: 92%;
+    opacity: 0.2;
+}
+
+.myself_install{
+    border-radius: 30rpx;
+    margin-top: 20rpx;
+    height: 20%;
+    width: 90%;
+    display: flex;
+    border: 1px solid #d81e06;
+}

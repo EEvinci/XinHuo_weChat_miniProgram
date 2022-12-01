@@ -1,0 +1,285 @@
+Page {
+    /* 全局样式 */
+    background: rgb(244, 245, 249);
+    height: 100%;
+    position: fixed;
+}
+
+.fontColorBox,
+.fontColorBox1,
+.fontColorBox2 {
+    /* 文字默认颜色 */
+    color: #951D1D;
+}
+
+.navBox {
+    /* 顶部tab盒子样式 */
+    width: 100%;
+    height: 108rpx;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* 必要时拆行 */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titleBox {
+    /* 未选中文字的样式 */
+    color: rgb(168, 170, 175);
+    font-size: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lineBox,
+.notLineBox {
+    /* 选中及未选中底线共同样式 */
+    width: 100rpx;
+    height: 4rpx;
+}
+
+.lineBox {
+    /* 选中底线样式 */
+    background: black;
+    margin-top: 16rpx;
+    border-radius: 4rpx;
+}
+
+.notLineBox {
+    /* 未选中底线样式 */
+    background: transparent;
+}
+
+.swiperTtemBox {
+    /* 底部内容样式 */
+    height: 100vh;
+    overflow: scroll;
+    margin: 12rpx 0rpx;
+    background: white;
+    font-size: 28rpx;
+}
+
+/* 党史人物 */
+.people_list {
+    display: flex;
+    flex-direction: row;
+    height: 300rpx;
+    width: 100%;
+    border-bottom: 10px solid #eeeeee;
+}
+
+.people_list image {
+    margin: 20rpx;
+    height: 260rpx;
+    width: 26%;
+}
+
+.list_detail {
+    margin-top: 20rpx;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    height: 200rpx;
+    width: 66%;
+}
+
+.detail_title {
+    font-size: 34rpx;
+    font-weight: 900;
+}
+
+.detail_content {
+    font-size: 24rpx;
+}
+
+/* 轮播图部分 */
+.swiper_container {
+    position: fixed;
+    /* 总长的38% */
+    height: 20%;
+    width: 100%;
+}
+
+.swiper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.image_banner {
+    /* 让图片铺满 */
+    width: 100%;
+    height: 100%;
+}
+
+.wx-swiper-dots {
+    position: relative;
+    left: unset !important;
+    right: 38%;
+    top: 90%;
+}
+
+.wx-swiper-dots .wx-swiper-dots-horizontal {
+    margin-bottom: 0rpx;
+}
+
+/* 红色书籍 */
+.red_book {
+    position: absolute;
+    top: 350rpx;
+    width: 92%;
+    margin: 10rpx 4% 0 4%;
+    display: flex;
+    flex-direction: row;
+    /* 必要时拆行 */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.red_book image {
+    border-radius: 20rpx;
+    height: 240rpx;
+    width: 200rpx;
+}
+
+.mode_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 文本字体分开 */
+.mode_detail text {
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    font-weight: 550;
+    font-size: 35rpx;
+    color: black;
+    left: 5rpx;
+    margin-top: 10rpx;
+}
+
+/* 四个时期模块 */
+.period_detail {
+    position: absolute;
+    top: 340rpx;
+    width: 100%;
+}
+
+.old_period,
+.new_period {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 10px solid rgb(139, 0, 0, 0.2);
+}
+
+.old_period image {
+    margin: 0 3% 0 3%;
+    height: 320rpx;
+    width: 400rpx;
+}
+
+.new_period image {
+    margin: 0 3% 0 3%;
+    height: 340rpx;
+    width: 400rpx;
+}
+
+.old_period .title {
+    font-size: 28rpx;
+    width: 50%;
+    margin: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.new_period .title {
+    font-size: 28rpx;
+    width: 50%;
+    margin: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.old_period .time {
+    font-size: 22rpx;
+    color: darkgray;
+}
+
+.new_period .time {
+    font-size: 22rpx;
+    color: darkgray;
+}
+
+.history_detail {
+    position: absolute;
+    top: 750rpx;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #8C0813;
+}
+
+.history_overall {
+    position: absolute;
+    height: 1100rpx;
+    z-index: -1;
+    margin-bottom: 200rpx;
+    width: 92%;
+}
+
+.history_content{
+    position: relative;
+    top: 670rpx;
+    margin: 0 7% 0 7%;
+    font-weight: 900;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.history_title{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 400rpx;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+.history_year{
+    font-size: 50rpx;
+    margin-top: -40rpx;
+    margin-bottom: 40rpx;
+}
+
+.history_day{
+    font-size: 76rpx;
+}
+
+.bottom1{
+    height: 200rpx;
+}
+
+.bottom2{
+    height: 1900rpx;
+}

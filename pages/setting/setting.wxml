@@ -1,0 +1,17 @@
+<view class="root">
+    <view class="title_background"></view>
+    <view class="setting_items">
+        <block wx:for="{{settings}}">
+            <view class="{{4 == index ? 'setting_show1' : 'setting_show'}}">
+                <image src="{{item.image}}"></image>
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+    </view>
+    <block wx:if="{{flag == 1}}">
+        <view class="logout_button" bindtap="loginOut">退出登录</view>
+    </block>
+    <block wx:if="{{flag == 0}}">
+        <view class="login_button" bindtap="getUserProfile">登录</view>
+    </block>
+</view>

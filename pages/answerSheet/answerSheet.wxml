@@ -1,0 +1,39 @@
+<view class="root">
+    <!-- Tab布局 -->
+    <view class='navBox'>
+        <view class='titleBox' bindtap='titleClick' data-idx='0'>
+            <text class="{{0 == currentIndex ? 'fontColorBox' : ''}}">测试记录</text>
+            <hr class="{{0 == currentIndex ? 'lineBox' : 'notLineBox'}}" />
+        </view>
+        <view class='titleBox' bindtap='titleClick' data-idx='1'>
+            <text class="{{1 == currentIndex ? 'fontColorBox1' : ''}}">答题记录</text>
+            <hr class="{{1 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+        </view>
+    </view>
+
+    <!-- 内容布局 -->
+    <swiper class='swiperTtemBox' bindchange='pagechange' current='{{currentIndex}}'>
+        <swiper-item class='swiperTtemBox'>
+            <block wx:for="{{testRecords}}">
+                <view class="record_detail">
+                    <view class="record_left">
+                        <view class="left_action">{{item.title}}</view>
+                        <view class="left_time">{{testTimes[index]}}</view>
+                    </view>
+                    <view class="record_right">{{item.score}}分</view>
+                </view>
+            </block>
+        </swiper-item>
+        <swiper-item class='swiperTtemBox'>
+            <block wx:for="{{practiceRecords}}">
+                <view class="record_detail">
+                    <view class="record_left">
+                        <view class="left_action">{{item.title}}</view>
+                        <view class="left_time">{{praticeTimes[index]}}</view>
+                    </view>
+                    <view class="record_right">{{item.score}}分</view>
+                </view>
+            </block>
+        </swiper-item>
+    </swiper>
+</view>

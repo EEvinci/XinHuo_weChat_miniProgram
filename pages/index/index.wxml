@@ -1,0 +1,169 @@
+<!-- 头部 -->
+<view class="page_index_header">
+  <!-- 搜索部分 -->
+  <!-- <view class='index_search'> -->
+  <view class="search" bindtap='search'>
+    <view class="search_box">
+      <!-- 导入图标 -->
+      <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/ca2608c6-4ff0-420b-a993-baade2c84c09.png" class="searchcion" size='14'></image>
+      <!-- <icon class="searchcion" size='16' type='search'></icon> -->
+      <input class="sousuo" disabled placeholder="智慧党建" />
+    </view>
+  </view>
+  <!-- </view> -->
+
+  <!-- 时间显示 -->
+  <view class="index_time">
+    <!-- 左边星期 -->
+    <view class="time_box_myWeek">周{{myWeek}}</view>
+    <!-- 右边日月 -->
+    <view class="time_box_Date">
+      <view class="Date_Month">{{myMonth}}/{{myDay}}</view>
+    </view>
+    <!-- </view> -->
+  </view>
+
+  <!-- 扫一扫 -->
+  <view class="index_scan">
+    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/785c498e-94b1-4e7d-aba9-9ebd1c215aa7.png" class="scan" mode="widthFix" bindtap="scanCode"></image>
+  </view>
+</view>
+
+<!-- 轮播动画 -->
+<view class="page_index_lunbo">
+  <view class="swiper_container">
+    <!-- 轮播组件 -->
+    <swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" interval="3000" duration="1000" indicator-color="#d0d0d0" indicator-active-color="#820000">
+      <block wx:for="{{images}}" wx:key="id"></block>
+      <!-- 每一个轮播的项目 -->
+      <swiper-item>
+        <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/8e5d17ef-f84c-4323-aee3-dd37a4eb104b.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/796d6a13-cd13-4e36-a720-040a80ce6638.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/a616e4c5-e9e7-4378-a7e7-f30dbcb39a7a.jpg"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+
+<!-- 首页六个基本页面 -->
+<view class="page_index_menu">
+  <!-- 是否需要使用icon来创建圆形 -->
+  <view class="menu">
+    <view class="img_menu" bindtap="goToThemeLive">
+      <view class="img">
+        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/db1fd24c-7a6c-48a5-a82c-b25f03fe7075.png"></image>
+      </view>
+      <text>主题生活</text>
+    </view>
+  </view>
+
+  <view class="menu">
+    <view class="img_menu" bindtap="goToCompletionTest">
+      <view class="img">
+        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/6d84ca5e-10e6-4657-96ac-895a9bbf7424.png"></image>
+      </view>
+      <text>结业测试</text>
+    </view>
+  </view>
+
+  <view class="menu">
+    <view class="img_menu" bindtap="goToTestTrain">
+      <view class="img">
+        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1ccb9604-5c30-4443-8ea4-bae3ec6acd95.png"></image>
+      </view>
+      <text>我要答题</text>
+    </view>
+  </view>
+
+  <view class="menu">
+    <view class="img_menu" bindtap="goToSign">
+      <view class="img">
+        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/d41d0650-e0d9-4759-9191-78d5b6b871a1.png"></image>
+      </view>
+      <text>打卡签到</text>
+    </view>
+  </view>
+
+  <view class="menu">
+    <view class="img_menu" bindtap="goToKnowledgeBase">
+      <view class="img">
+        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/9718a321-afa6-4eca-a483-96d39f8d6c22.png"></image>
+      </view>
+      <text>党政知识库</text>
+    </view>
+  </view>
+
+  <view class="menu">
+    <view class="img_menu" bindtap="goToImportantNotice">
+      <view class="img">
+        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/0b74802c-dca9-4906-9fe8-546f03e4ed10.png"></image>
+      </view>
+      <text>重要通知</text>
+    </view>
+  </view>
+
+</view>
+
+<!-- 日历页面 -->
+<view class='all'>
+  <view class="bar">
+    <!-- 上一个月 -->
+    <view class="previous" bindtap="handleCalendar" data-handle="prev">
+      <image src='https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/3b56ad5d-82d8-4594-b126-42caf4fdaf71.png'></image>
+    </view>
+    <!-- 显示年月 -->
+    <view class="date">{{cur_year}} 年 {{cur_month}} 月</view>
+    <!-- 下一个月 -->
+    <view class="next" bindtap="handleCalendar" data-handle="next">
+      <image src='https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/bc86d6f1-776b-4edd-a27b-f8861031c1e0.png'></image>
+    </view>
+  </view>
+  <!-- 显示星期 -->
+  <view class="week">
+    <view wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+  </view>
+  <view class='days' bindtap="goToSign">
+    <!-- 列 -->
+    <view class="columns" wx:for="{{days.length/7}}" wx:for-index="i" wx:key="i">
+      <view wx:for="{{days}}" wx:for-index="j" wx:key="j">
+        <!-- 行 -->
+        <view class="rows" wx:if="{{j/7 == i}}">
+          <view class="rows" wx:for="{{7}}" wx:for-index="k" wx:key="k">
+            <!-- 每个月份的空的单元格 -->
+            <view class='cell' wx:if="{{days[j+k] == 0}}">
+              <text decode="{{true}}">&nbsp;&nbsp;</text>
+            </view>
+            <!-- 每个月份的有数字的单元格 -->
+            <view class='cell' wx:else>
+              <!-- 当前日期已签到  且正常出勤-->
+              <view wx:if="{{days_sign_up[j+k] ==1}}" style='background-color:#D8412B;color:white' class='cell'>
+                <text>{{days[j+k]}}</text>
+              </view>
+              <!-- 当前日期也签到 但迟到 -->
+              <view wx:elif="{{days_sign_up[j+k] ==0}}" style='background-color:#fabc05' class='cell'>
+                <text>{{days[j+k]}}</text>
+              </view>
+              <!-- 当前日期未签到 -->
+              <view wx:else>
+                <text>{{days[j+k]}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 坚持打卡天数 -->
+  <!-- <view class='count'>
+    <text>截至目前，你已坚持打卡</text>
+    <view class='daynumber'>
+      <text class='number'>{{count}}</text>
+      <text class='day'>天</text>
+    </view>
+    <text>请再接再厉，继续努力</text>
+  </view> -->
+</view>

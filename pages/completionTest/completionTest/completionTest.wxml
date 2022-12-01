@@ -1,0 +1,35 @@
+<view class="root">
+    <!-- 标题 -->
+    <view class="test_title">
+        <view class="title_left">
+            <text>距离考试结束还有：</text>
+            <countDown target="{{targetTime}}" bindcallback="countDownCallbackFn" clear-timer="{{clearTimer}}"></countDown>
+        </view>
+        <view class="title_right" bindtap="addExamRecord">交卷</view>
+    </view>
+    <!-- 题目标题 -->
+    <view class="topic_title">
+        <view class="topic_type">{{questionType}}</view>
+        <view class="topic_number">{{index+1}}/{{questionList.length}}</view>
+    </view>
+    <!-- 题目 -->
+    <view class="topic">
+        <view class="topic_description">
+            {{index+1}}.{{questionList[index].question}}
+        </view>
+        <view class="topic_option">
+            <radio-group class="radio-group" bindchange="radioChange">
+                <label class="radio my-choosebox" wx:for="{{questionList[index].options}}" wx:for-index="key" wx:for-item="value" wx:key="index">
+                    <radio value="{{key}}" checked="{{questionList[index].checked}}" color="#de644f" />
+                    <text class="margin-left-xs">{{key}}.{{value}}</text>
+                </label>
+            </radio-group>
+        </view>
+    </view>
+    <block wx:if="{{index+1 != questionList.length}}">
+        <view class="topic_button" bindtap="nextSubmit">下一题</view>
+    </block>
+    <block wx:if="{{index+1 == questionList.length}}">
+        <view class="topic_button" bindtap="nextSubmit">提交</view>
+    </block>
+</view>

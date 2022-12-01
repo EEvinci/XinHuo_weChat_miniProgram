@@ -1,0 +1,52 @@
+<!--pages/myself/myself.wxml-->
+<view class="pages_myself">
+    <view class="title_background"></view>
+    <!-- 头部我的 -->
+    <view class="myself_my">
+        <view class="myself_my_header">
+            <!-- <open-data class="header_icon" type="userAvatarUrl"></open-data> -->
+            <image class="myimage" src="{{userInfo.avatarUrl || 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0'}}" bindtap="getUserProfile"></image>
+            <view class="header_inf">
+                <view class="header_inf_top"><text class="header_text">{{userInfo.nickName || '微信用户'}}</text>
+                </view>
+                <view class="header_inf_bot">我的身份：{{identity}}</view>
+            </view>
+            <image class="header_search" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/8d125c19-ffa2-4587-92a6-70a22294a257.png"></image>
+        </view>
+        <view class="myself_my_bottom">
+            <view class="bottom_inf1" bindtap="goToScoreManagement">积分：233</view>
+            <view class="bottom_inf2">|</view>
+            <view class="bottom_inf3" bindtap="goToAnswerSheet">答题记录</view>
+        </view>
+    </view>
+
+    <!-- 我的宣誓记录，微信不能直接导入本地图片，可参照https://www.csdn.net/tags/MtjacgzsNjk0MDctYmxvZwO0O0OO0O0O.html，这里使用了云开发 -->
+    <view class="myself_xuanshi" bindtap="gotoxuanshi">我要宣誓</view>
+
+    <!-- 我的五个界面 -->
+    <view class="myself_option">
+        <view class='option_item' bindtap="goToMyOrganization">
+            <image class="option_img" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/5b929709-7910-4406-b461-52f9d554fd10.png"></image>
+            <view class="option_title">我的党组织</view>
+        </view>
+        <view class="line"></view>
+
+        <view class='option_item' bindtap="goToAnswerSheet">
+            <image class="option_img" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1acc1b7d-8222-4f0c-8b4f-d445218c7145.png"></image>
+            <view class="option_title">答题记录</view>
+        </view>
+        <view class="line"></view>
+
+        <view class='option_item' bindtap="goToScoreManagement">
+            <image class="option_img" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/5ff111c4-ba2b-401d-9f08-e6be064c1b44.png"></image>
+            <view class="option_title">积分管理</view>
+        </view>
+        <view class="line"></view>
+        <view class='option_item' bindtap="goToSetting">
+            <image class="option_img" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/2c70b452-1718-4975-aa7f-43429a32c76a.png"></image>
+            <view class="option_title">设置</view>
+        </view>
+    </view>
+
+
+</view>

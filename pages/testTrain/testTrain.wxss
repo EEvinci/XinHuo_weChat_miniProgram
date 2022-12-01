@@ -1,0 +1,250 @@
+.nav_top{
+    width: 100%;
+    text-align: right;
+    font-size: 32rpx;
+    height: 80rpx;
+}
+
+.top_button{
+    margin-right: 30rpx;
+}
+
+.test_description{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 10rpx;
+    margin-left: 20rpx;
+}
+
+.nav_title{
+    font-size: 36rpx;
+    font-weight: 600;
+}
+
+.nav_explain{
+    font-size: 26rpx;
+    color: gray;
+}
+
+.test_module{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 260rpx;
+    margin-top: 30rpx;
+    
+}
+
+.test_detail{
+    height: 210rpx;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 10rpx;
+}
+
+.test_detail image{
+    width: 50rpx;
+    height: 50rpx;
+    margin: 10rpx;
+}
+
+.test_title{
+    font-size: 30rpx;
+    font-weight: 600;
+    margin: 6rpx;
+}
+
+.test_explain{
+    font-size: 22rpx;
+    color: gray;
+}
+
+.test_score{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 140rpx;
+}
+
+.score_list{
+    position: absolute;
+    right: 30rpx;
+    border-radius: 30rpx;
+    width: 200rpx;
+    display: flex;
+    height: 60rpx;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    border: 1px solid #cccccc;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 1px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.score_list image{
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.my_score{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_score image{
+    border-radius: 20rpx;
+    position: relative;
+    left: 90rpx;
+    width: 60%;
+    height: 150rpx;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 16px -5px, rgba(0, 0, 0, 0.3) 0px 6px 12px -8px;
+}
+
+.my_score text{
+    position: relative;
+    right: 236rpx;
+}
+
+/* 排行榜部分 */
+.ranking_list{
+    margin: 0rpx auto;
+    margin-top: 60rpx;
+    width: 100%;
+    height: 240rpx;
+}
+
+.ranking_list image{
+    position: relative;
+    height: 215rpx;
+    width: 100%;
+    border-radius: 20rpx;
+}
+
+.ranking_title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200rpx;
+    font-size: 54rpx;
+    font-weight: 600;
+    margin-bottom: 10rpx;
+    color: white;
+}
+
+.navBox{
+    position: relative;
+    width: 100%;
+    height: 108rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* 必要时拆行 */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fontColorBox,
+.fontColorBox1,
+.fontColorBox2 {
+    /* 文字默认颜色 */
+    color: black;
+}
+
+.titleBox {
+    /* 未选中文字的样式 */
+    color: white;
+    font-size: 34rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lineBox,.notLineBox{
+    /* 选中及未选中底线共同样式 */
+    width: 140rpx;
+    height: 4rpx;
+}
+
+.lineBox {
+    /* 选中底线样式 */
+    background: black;
+    margin-top: 16rpx;
+    border-radius: 4rpx;
+}
+
+.notLineBox {
+    /* 未选中底线样式 */
+    background: transparent;
+}
+
+.swiperTtemBox {
+    /* 底部内容样式 */
+    height: 100vh;
+    overflow: scroll;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -10rpx;
+    font-size: 28rpx;
+}
+
+.ranking_detail{
+    width: 100%;
+    height: 120rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #cccccc;
+}
+
+.ranking_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80rpx;
+    width: 30%;
+}
+
+.left_number1,.left_number2,.left_number3,.left_number{
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 90rpx;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_number1{
+    background-color: gold;
+}
+
+.left_number2{
+    background-color: grey;
+}
+
+.left_number3{
+    background-color: tan;
+}
+
+.ranking_total{
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 30rpx;
+    height: 1100rpx;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+
+

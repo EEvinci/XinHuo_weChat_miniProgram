@@ -1,0 +1,20 @@
+<view class="root">
+    <view class="notice_title">
+        <text class="title_left">消息列表</text>
+        <view class="title_right" bindtap="readAll">全部已读</view>
+    </view>
+    <view class="notice_message">
+        <block wx:for="{{messageList}}" wx:key="index">
+            <view class="message_detail">
+                <image src="{{item.image}}"></image>
+                <view class="message_right">
+                    <view class="right_title">{{item.from}}</view>
+                    <view class="right_detail">{{item.detail}}</view>
+                </view>
+                <block wx:if="{{item.isRead == false}}">
+                    <view class="unread_notice">{{item.unReadCount}}</view>
+                </block>
+            </view>
+        </block>
+    </view>
+</view>

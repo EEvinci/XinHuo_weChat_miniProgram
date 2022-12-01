@@ -1,0 +1,72 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/index/index",
+        "pages/detail/news/news",
+        "pages/detail/greatman/greatman",
+        "pages/detail/fourperiod/fourperiod",
+        "pages/scoreManagement/scoreManagement",
+        "pages/myCollection/myCollection",
+        "pages/myOrganization/myOrganization",
+        "pages/myOrganization/organizationNews/organizationNews",
+        "pages/myOrganization/organizationMeetings/organizationMeetings",
+        "pages/knowledgeBase/knowledgeBase",
+        "pages/testTrain/testTrain",
+        "pages/testTrain/dailyTrain/dailyTrain",
+        "pages/testTrain/specialTrain/specialTrain",
+        "pages/testTrain/specialTrain/specialTrainTest/specialTrainTest",
+        "pages/testTrain/weeklyTrain/weeklyTrain",
+        "pages/testTrain/weeklyTrain/weeklyTrainTest/weeklyTrainTest",
+        "pages/testTrain/trainResults/trainResults",
+        "pages/testResults/testResults",
+        "pages/answerSheet/answerSheet",
+        "pages/themeLive/themeLive",
+        "pages/clockInSignIn/clockInSignIn",
+        "pages/importantNotice/importantNotice",
+        "pages/xuanshi/xuanshi",
+        "pages/logs/logs",
+        "pages/index/search/search",
+        "pages/index/searchResult/searchResult",
+        "pages/myself/myself",
+        "pages/news/news",
+        "pages/completionTest/testList/testList",
+        "pages/completionTest/completionTest/completionTest",
+        "pages/setting/setting"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#D8412B",
+        "navigationBarTitleText": "芯火优创",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#666666",
+        "selectedColor": "#820000",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+                "pagePath": "pages/news/news",
+                "iconPath": "/images/Tabbar/底部导航—要闻.png",
+                "selectedIconPath": "/images/Tabbar/底部导航—要闻.png",
+                "text": "要闻"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "/images/Tabbar/底部导航—主页.png",
+                "selectedIconPath": "/images/Tabbar/底部导航—主页.png",
+                "text": "主页"
+            },
+            {
+                "pagePath": "pages/myself/myself",
+                "iconPath": "/images/Tabbar/底部导航—我的.png",
+                "selectedIconPath": "/images/Tabbar/底部导航—我的.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "cloud": true,
+    "usingComponents": {
+    }
+}

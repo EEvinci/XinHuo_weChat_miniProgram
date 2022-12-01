@@ -1,0 +1,9 @@
+<view class="root">
+    <block wx:for="{{specialList}}">
+        <view class="special_list">
+            <view class="special_title">{{item.title}}</view>
+            <view class="special_time">{{dateList[index]}}</view>
+            <view class="special_button" bindtap="goToSpecialTrain" data-paperid="{{item.id}}">开始答题</view>
+        </view>
+    </block>
+</view>

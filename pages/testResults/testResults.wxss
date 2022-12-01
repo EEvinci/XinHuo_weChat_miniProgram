@@ -1,0 +1,62 @@
+/* pages/results/results.wxss */
+page {
+  background-color: #fff;
+}
+
+.page_title{
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(216, 65, 43, 0.8);
+}
+
+
+.page-head image{
+  width: 100%;
+  height: 360rpx;
+}
+
+.mw-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.page-score {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  color: #D8412B;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.score-num {
+  font-size: 100rpx;
+}
+
+.page-footer {
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.score_detail{
+  color: #D8412B;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.detail_content{
+  margin-top: 10rpx;
+  /* color: #bbbbbb; */
+  font-size: 32rpx;
+}

@@ -1,0 +1,130 @@
+Page {
+    /* 全局样式 */
+    background: rgb(244, 245, 249);
+    height: 100%;
+    position: fixed;
+}
+
+.fontColorBox,
+.fontColorBox1,
+.fontColorBox2 {
+    /* 文字默认颜色 */
+    color: #BD3124;
+}
+
+.navBox {
+    /* 顶部tab盒子样式 */
+    width: 100%;
+    height: 108rpx;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* 必要时拆行 */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titleBox {
+    /* 未选中文字的样式 */
+    color: rgb(168, 170, 175);
+    font-size: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lineBox,.notLineBox{
+    /* 选中及未选中底线共同样式 */
+    width: 32rpx;
+    height: 8rpx;
+}
+
+.lineBox {
+    /* 选中底线样式 */
+    background: #BD3124;
+    margin-top: 16rpx;
+    border-radius: 4rpx;
+}
+
+.notLineBox {
+    /* 未选中底线样式 */
+    background: transparent;
+}
+
+.swiperTtemBox {
+    /* 底部内容样式 */
+    height: 100vh;
+    overflow: scroll;
+    margin: 12rpx 0rpx;
+    background: white;
+    font-size: 28rpx;
+}
+
+/* 新闻收藏页面 */
+.news_detail{
+    height: 250rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #cccccc;
+}
+
+.news_right{
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 30%;
+    background-color: salmon;
+}
+
+.news_left{
+    width: 70%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.news_title{
+    font-size: 34rpx;
+    margin-bottom: 20rpx;
+}
+
+.news_source{
+    color: darkgray;
+    font-size: 28rpx;
+    margin-left: 10rpx;
+}
+
+/* 题目界面 */
+.topic_detail{
+    height: 320rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #cccccc;
+}
+
+.topic_title{
+    margin: 10rpx;
+    font-size: 36rpx;
+    font-weight: 600;
+    margin-bottom: 20rpx;
+}
+
+.topic_answer{
+    margin-left: 10rpx;
+    font-size: 30rpx;
+    color: rgb(132, 243, 6);
+}
+
+.topic_bottom{
+    margin-top: 20rpx;
+    color: rgb(255, 69, 0);
+    font-size: 28rpx;
+    display: flex;
+    justify-content: space-between;
+}

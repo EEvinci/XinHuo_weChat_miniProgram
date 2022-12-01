@@ -1,0 +1,205 @@
+/* pages/news/news.wxss */
+
+/* 轮播框 */
+.swiper_container {
+  width: 100%;
+  height: 400rpx;
+}
+
+/* 轮播图 */
+.image_banner {
+  /* 让图片铺满 */
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 城院头条容器 */
+.text_view {
+  height: 210rpx;
+  background-color: rgb(224, 217, 217);
+  text-align: center;
+}
+
+/* 城院头条 */
+.text_title {
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #DF644F;
+}
+
+.text_text {
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+/* 上下部分间距 */
+.null_line {
+  width: 100%;
+  height: 20rpx;
+}
+
+/* 动态、风采、获奖标签页 */
+.label_title {
+  width: 100%;
+  /* height: 32rpx; */
+  border-top: 4px solid rgb(167, 69, 45);
+}
+
+.navBox {
+  /* 顶部tab盒子样式 */
+  width: 100%;
+  height: 30rpx;
+  /* background: rgb(141, 36, 36); */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* 必要时拆行 */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.titleBox {
+  /* 未选中文字的样式 */
+  padding-top: 5rpx;
+  color: rgb(168, 170, 175);
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.lineBox,
+.notLineBox {
+  /* 选中及未选中底线共同样式 */
+  width: 32rpx;
+  height: 8rpx;
+}
+
+.fontColorBox,
+.fontColorBox1,
+.fontColorBox2 {
+  /* 文字默认颜色 */
+  color: #D8412B;
+}
+
+/* 滑动页面 */
+.swiperTtemBox {
+  /* 底部内容样式 */
+  height: 55vh;
+  overflow: scroll;
+  margin: 12rpx 0rpx;
+  background: white;
+  font-size: 28rpx;
+}
+
+
+/* 城院动态、学子获奖 */
+.ZUCC_news {
+  height: 260rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #D8412B;
+}
+
+.ZUCC_news_textarea {
+  width: 420rpx;
+  font-size: 32rpx;
+}
+
+.ZUCC_news_textarea1{
+  width: 420rpx;
+  font-size: 32rpx;
+}
+
+.ZUCC_news_title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  margin-bottom: 10rpx;
+}
+
+.ZUCC_news_source,
+.ZUCC_news_publishdate {
+  font-size: 26rpx;
+  color: #bbbbbb;
+}
+
+.ZUCC_news_picture {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  padding-top: 20rpx;
+}
+
+.ZUCC_news_picture1{
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  padding-top: 20rpx;
+}
+
+/* 党员风采 */
+.ZUCC_partymenber_top {
+  margin-top: 10px;
+  width: 94%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  border: 3px solid rgb(141, 25, 25);
+}
+
+.ZUCC_partymenber_left {
+  width: 57%;
+  height: 270px;
+  position: absolute;
+  left: 2.2%;
+  text-align: center;
+  border-bottom: 3px solid rgb(141, 25, 25);
+  border-left: 3px solid rgb(141, 25, 25);
+  border-right: 3px solid rgb(141, 25, 25);
+}
+
+.ZUCC_partymenber_right {
+  width: 37%;
+  height: 270px;
+  /* display: flex; */
+  position: absolute;
+  right: 2.2%;
+  text-align: center;
+  border-bottom: 3px solid rgb(141, 25, 25);
+  border-right: 3px solid rgb(141, 25, 25);
+}
+
+.ZUCC_partymenber_title {
+  width: 100%;
+  font-size: 17.5px;
+}
+
+.ZUCC_partymenber_text {
+  font-size: 20px;
+  font-weight: 400;
+}

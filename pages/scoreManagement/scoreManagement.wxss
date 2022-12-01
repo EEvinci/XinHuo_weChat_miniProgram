@@ -1,0 +1,358 @@
+Page {
+    /* 全局样式 */
+    background: rgb(244, 245, 249);
+    height: 100%;
+    position: fixed;
+    font-family: cursive;
+}
+
+.top_title{
+    background-color: #BD3124;
+    height: 120rpx;
+    font-size: 60rpx;
+    font-family: cursive;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_g{
+    position: relative;
+    height: 300rpx;
+}
+
+.fontColorBox,
+.fontColorBox1,
+.fontColorBox2 {
+    /* 文字默认颜色 */
+    color: #BD3124;
+}
+
+.navBox {
+    position: absolute;
+    /* 顶部tab盒子样式 */
+    width: 100%;
+    height: 72rpx;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* 必要时拆行 */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titleBox {
+    /* 未选中文字的样式 */
+    color: rgb(168, 170, 175);
+    font-size: 28rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lineBox,.notLineBox{
+    /* 选中及未选中底线共同样式 */
+    width: 80rpx;
+    height: 8rpx;
+}
+
+.lineBox {
+    /* 选中底线样式 */
+    background: #BD3124;
+    margin-top: 4rpx;
+    border-radius: 4rpx;
+}
+
+.notLineBox {
+    /* 未选中底线样式 */
+    background: transparent;
+}
+
+.img{
+    height: 300rpx;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.swiperTtemBox {
+    /* 底部内容样式 */
+    height: 100vh;
+    overflow: scroll;
+    margin: 0rpx 0rpx;
+    border-top: 1px solid #cccccc;
+    background: white;
+    font-size: 28rpx;
+}
+
+.center_content{
+    bottom: 150rpx;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.total_score{
+    font-size: 48rpx;
+    font-weight: 600;
+}
+
+.sign_in{
+    color: white;
+    background-color: rgb(189, 49, 36);
+    border-radius: 10rpx;
+    width: 220rpx;
+    height: 64rpx;
+    display: flex;
+    flex-direction: row;
+    font-size: 28rpx;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 6px;
+}
+
+.sign_in image{
+    height: 50rpx;
+    width: 50rpx;
+    margin-right: 10rpx;
+}
+
+/* 积分规则 */
+.score_rules{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.score_title{
+    font-size: 46rpx;
+    font-weight: 600;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    margin-top: 10rpx;
+    margin-bottom: 20rpx;
+    margin-left: 10rpx;
+    border-bottom: 1px solid #cccccc;
+}
+
+.rules_detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.rules_image{
+    height: 85rpx;
+    width: 85rpx;
+    background-color: rgb(189, 49, 36, 0.3);
+    border-radius: 90rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rpx;
+}
+
+.rules_image image{
+    height: 70rpx;
+    width: 70rpx;
+
+}
+
+.rules_content{
+    margin: 20rpx;
+    border-radius: 10rpx;
+    background-color: rgb(189, 49, 36);
+    margin-left: 10rpx;
+    color: white;
+    width: 420rpx;
+    height: 150rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.rules_content image{
+    height: 50rpx;
+    width: 50rpx;
+    margin: 10rpx;
+}
+
+.wenzi_title{
+    font-size: 40rpx;
+    font-weight: 600;
+}
+
+.wenzi_explain{
+    font-size: 24rpx;
+}
+
+.rules_button{
+    height: 68rpx;
+    width: 128rpx;
+    color: white;
+    background-color: #BD3124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    border-radius: 10rpx;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 6px;
+}
+/* 积分商城 */
+.content_detail{
+    bottom: 180rpx;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.center_content_simple{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+.total_score_simple{
+    font-weight: 600;
+    font-size: 64rpx;
+    color: #951D1D;
+    font-family: cursive;
+}
+
+.exchage_record{
+    color: white;
+    background-color: rgb(189, 49, 36);
+    border-radius: 10rpx;
+    width: 180rpx;
+    height: 64rpx;
+    display: flex;
+    flex-direction: row;
+    font-size: 28rpx;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.notice{
+    border-top: 1px solid #cccccc;
+    margin-top: 30rpx;
+    height: 70rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30rpx;
+}
+
+.notice_left{
+    height: 50rpx;
+    width: 50rpx;
+}
+
+.notice_right{
+    height: 30rpx;
+    width: 30rpx;
+}
+/* 积分商城——列表 */
+.score_store{
+    height: 64%;
+    margin: 4%;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20rpx;
+    border: 2px solid #cccccc;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.store_list{
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list_left{
+    height: 200rpx;
+    width: 200rpx;
+    border-radius: 50rpx;
+}
+
+.list_detail{
+    height: 200rpx;
+    width: 300rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.list_value{
+    color: #BD3124;
+    font-weight: 600;
+}
+
+.list_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 54rpx;
+    width: 130rpx;
+    background-color: rgb(189, 49, 36);
+    border-radius: 30rpx;
+    box-shadow: rgba(189, 49, 36, 0.4) 0px 5px, rgba(189, 49, 36, 0.3) 0px 10px, rgba(189, 49, 36, 0.2) 0px 15px, rgba(189, 49, 36, 0.1) 0px 20px, rgba(189, 49, 36, 0.05) 0px 25px;
+}
+/* 历史记录 */
+.content_title{
+    bottom: 200rpx;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    font-weight: 600;
+    line-height: 70rpx;
+    font-size: 42rpx;
+}
+
+.record_detail{
+    margin: 6%;
+    height: 120rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50rpx 50rpx 50rpx 50rpx;
+    border: 2rpx solid slategrey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 8px, rgba(0, 0, 0, 0.22) 0px 6px 6px;
+}
+
+.record_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_action{
+    font-size: 40rpx;
+    font-weight: 600;
+    margin: 8rpx;
+}
+
+.left_time{
+    font-size: 24rpx;
+}
+
+.record_right{
+    font-size: 34rpx;
+    color: rgb(189, 49, 36);
+}

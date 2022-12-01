@@ -1,0 +1,65 @@
+<view class="root">
+    <view class="sign_title">
+        <text class="sign_word">签到</text>
+        <view class="sign_button" bindtap="signInToday">点击签到</view>
+    </view>
+    <view class='all'>
+        <view class="bar">
+            <!-- 上一个月 -->
+            <view class="previous" bindtap="handleCalendar" data-handle="prev">
+            <image src='https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/ea0e23a0-c7d5-4800-952b-1a3f5ebcc3b1.png'></image>
+            </view>
+            <!-- 显示年月 -->
+            <view class="date">{{cur_year}} 年 {{cur_month}} 月</view>
+            <!-- 下一个月 -->
+            <view class="next" bindtap="handleCalendar" data-handle="next">
+            <image src='https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/c9f1f877-c7fd-4095-8c82-463e2024cbd9.png'></image>
+            </view>
+        </view>
+        <!-- 显示星期 -->
+        <view class="week">
+            <view wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+        </view>
+        <view class='days'>
+            <!-- 列 -->
+            <view class="columns" wx:for="{{days.length/7}}" wx:for-index="i" wx:key="i">
+            <view wx:for="{{days}}" wx:for-index="j" wx:key="j">
+                <!-- 行 -->
+                <view class="rows" wx:if="{{j/7 == i}}">
+                <view class="rows" wx:for="{{7}}" wx:for-index="k" wx:key="k">
+                    <!-- 每个月份的空的单元格 -->
+                    <view class='cell' wx:if="{{days[j+k] == 0}}">
+                    <text decode="{{true}}">&nbsp;&nbsp;</text>
+                    </view>
+                    <!-- 每个月份的有数字的单元格 -->
+                    <view class='cell' wx:else>
+                    <!-- 当前日期已签到  且正常出勤-->
+                    <view wx:if="{{days_sign_up[j+k] ==1}}" style='background-color:#D8412B; color: white;' class='cell'>
+                        <text>{{days[j+k]}}</text>
+                    </view>
+                    <!-- 当前日期也签单 但迟到 -->
+                    <view wx:elif="{{days_sign_up[j+k] ==0}}" style='background-color:#fabc05' class='cell'>
+                        <text>{{days[j+k]}}</text>
+                    </view>
+                    <!-- 当前日期未签到 -->
+                    <view wx:else>
+                        <text>{{days[j+k]}}</text>
+                    </view>
+                    </view>
+                </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 坚持打卡天数 -->
+    <view class='count'>
+        <text>{{cur_month}}月，你已坚持打卡</text>
+        <view class='daynumber'>
+        <text class='number'>{{count}}</text>
+        <text class='day'>天</text>
+        </view>
+        <text>请再接再厉，继续努力</text>
+    </view>
+    </view>
+
+</view>

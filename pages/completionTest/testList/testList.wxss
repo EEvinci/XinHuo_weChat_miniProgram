@@ -1,0 +1,40 @@
+.total_title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120rpx;
+    background-color: #DE644F;
+    color: white;
+}
+
+.test_list{
+    height: 150rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.list_image{
+    height: 80rpx;
+    width: 80rpx;
+    margin: 20rpx;
+}
+
+.list_detail{
+    display: flex;
+    flex-direction: column;
+    width:600rpx;
+}
+
+.detail_title{
+    font-size: 28rpx;
+    font-weight: 600;
+    margin-bottom: 10rpx;
+}
+
+.detail_content{
+    font-size: 24rpx;
+    color: #bbbbbb;
+}

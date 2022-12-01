@@ -1,0 +1,130 @@
+.my_background{
+    position: absolute;
+    height: 400rpx;
+    width: 100%;
+}
+
+.my_organization{
+    /* 起到一个覆盖作用 */
+    position: relative;
+    width: 100%;
+    top: 160rpx;
+}
+
+.my_title{
+    background-color: white;
+    border-radius: 50% 50% 0 0;
+    height: 240rpx;
+    justify-content: center;
+    text-align: center;
+}
+
+.my_title image{
+    margin-top: -34rpx;
+    border-radius: 90rpx;
+    background-color: white;
+    height: 90rpx;
+    width: 90rpx;
+    margin-bottom: 6rpx;
+}
+
+.my_class{
+    font-size: 36rpx;
+}
+
+.my_college{
+    margin-top: 10rpx;
+    color: #cccccc;
+}
+
+.title{
+    width: 100%;
+    height: 120rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #cccccc;
+}
+
+.title_text{
+    font-size: 36rpx;
+    margin-left: 20rpx;
+    font-weight: 600;
+}
+
+.title_img{
+    margin-left: 500rpx;
+    height: 40rpx;
+    width: 40rpx;
+}
+
+.info_content{
+    height: 150rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #cccccc;
+}
+
+.info_title{
+    font-size: 34rpx;
+    margin-bottom: 15rpx;
+    margin-left: 20rpx;
+}
+
+.info_detail{
+    color: darkgray;
+    font-size: 28rpx;
+    margin-left: 20rpx;
+}
+
+.meeting_content{
+    height: 240rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #cccccc;
+}
+
+.meeting_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160rpx;
+    width: 160rpx;
+    margin-left: 40rpx;
+}
+
+.meeting_right{
+    height: 180rpx;
+    width: 420rpx;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    margin-right: 20rpx;
+}
+
+.meeting_title{
+    font-size: 34rpx;
+    margin-bottom: 10rpx;
+}
+
+.meeting_type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28rpx;
+    height: 50rpx;
+    width: 160rpx;
+    border-radius: 30rpx;
+    color: red;
+    margin-bottom: 10rpx;
+    background-color: rgb(250, 126, 112, 0.3);
+}
+
+.meeting_detail{
+    color: darkgray;
+    font-size: 26rpx;
+    margin-left: 10rpx;
+}

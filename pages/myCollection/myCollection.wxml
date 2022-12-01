@@ -1,0 +1,56 @@
+<view class="root">
+    <!-- Tab布局 -->
+    <view class='navBox'>
+        <view class='titleBox' bindtap='titleClick' data-idx='0'>
+            <text class="{{0 == currentIndex ? 'fontColorBox' : ''}}">新闻</text>
+            <hr class="{{0 == currentIndex ? 'lineBox' : 'notLineBox'}}" />
+        </view>
+        <view class='titleBox' bindtap='titleClick' data-idx='1'>
+            <text class="{{1 == currentIndex ? 'fontColorBox1' : ''}}">活动</text>
+            <hr class="{{1 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+        </view>
+        <view class='titleBox' bindtap='titleClick' data-idx='2'>
+            <text class="{{2 == currentIndex ? 'fontColorBox2' : ''}}">题目</text>
+            <hr class="{{2 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+        </view>
+    </view>
+    <!-- 内容布局 -->
+    <swiper class='swiperTtemBox' bindchange='pagechange' current='{{currentIndex}}'>
+        <!-- 新闻 -->
+        <swiper-item class='swiperTtemBox'>
+            <view class="news">
+                <view class="news_detail" wx:for="{{newsList}}" wx:key="index">
+                    <view class="news_left">
+                        <view class="news_title">{{item.title}}</view>
+                        <view class="news_source">{{item.source}}<text decode="true">&nbsp;&nbsp;&nbsp;</text>{{item.time}}</view>
+                    </view>
+                    <image class="news_right" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/4a9c7615-66de-4858-8a6f-50f353f1e68d.jpg"></image>
+                </view>
+            </view>
+        </swiper-item>
+        <!-- 活动 -->
+        <swiper-item class='swiperTtemBox'>
+            <view class="activity">
+                <view class="news_detail" wx:for="{{activitiesList}}" wx:key="index">
+                    <view class="news_left">
+                        <view class="news_title">{{item.title}}</view>
+                    </view>
+                    <image class="news_right" src="{{item.image}}"></image>
+                </view>
+            </view>
+        </swiper-item>
+        <!-- 题目 -->
+        <swiper-item class='swiperTtemBox'>
+            <view class="topic">
+                <view class="topic_detail" wx:for="{{topicList}}" wx:key="index">
+                    <view class="topic_title">{{item.title}}</view>
+                    <view class="topic_answer">正确答案：<strong>{{item.trueAnswer}}</strong></view>
+                    <view class="topic_bottom">
+                        <view>{{item.type}}</view>
+                        <view>出题：{{item.source}}</view>
+                    </view>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

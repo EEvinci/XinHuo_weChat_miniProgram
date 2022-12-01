@@ -1,0 +1,247 @@
+.page_index_header {
+  display: flex;
+  flex-direction: row;
+  height: 90rpx;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.search {
+  width: 75%;
+}
+
+.search_box {
+  border: 1px solid #d0d0d0;
+  background-color: rgb(190, 183, 183, 0.4);
+  border-radius: 40rpx;
+  /* 搜索框空出来 */
+  margin: 10rpx;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+
+.search_box input {
+  /* 智慧党建 */
+  margin-left: 20rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+
+.search_box image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+
+.sousuo {
+  /* padding-left: 38%; */
+  width: 38%;
+  line-height: 150%;
+  text-align: center;
+}
+
+.searchcion {
+  position: absolute;
+  /* margin-left:38%; 居中*/
+  /* z-index: 2; */
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
+/* 时间部分 */
+.index_time {
+  font-size: 30rpx;
+  color: #d81e06;
+  display: flex;
+  flex-direction: column;
+  width: 100rpx;
+  /* 与左边的间距 */
+  margin: 8rpx;
+}
+
+.time_box_myWeek {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 34rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.time_box_Date {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.Date_Month {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 扫一扫 */
+.index_scan {
+  width: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index_scan image {
+  width: 62rpx;
+  height: 62rpx;
+}
+
+.scan {
+  margin: 15rpx 10rpx 10rpx 10rpx;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
+/* 轮播图部分 */
+.swiper_container {
+  margin-top: 10rpx;
+  position: absolute;
+  height: 350rpx;
+  width: 100%;
+}
+
+.swiper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.image_banner {
+  /* 让图片铺满 */
+  width: 100%;
+  height: 100%;
+}
+
+/* 六个基本页面 */
+.page_index_menu {
+  position: absolute;
+  margin-top: 10rpx;
+  top: 450rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* 必要时拆行 */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page_index_menu .menu {
+  width: 33.3%;
+  /*width:50%;每行显示两列，width:33.3%;每行显示三列*/
+  height: auto;
+  text-align: center;
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.page_index_menu image {
+  height: 70rpx;
+  width: 70rpx;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 132, 132, 0.3);
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 90rpx;
+}
+
+.img_menu {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  justify-content: center;
+  /* text和图片排列居中 */
+  align-items: center;
+
+}
+
+/* 文本字体分开 */
+.img_menu text {
+  margin-top: 10rpx;
+}
+
+/* 打卡日历 */
+.all {
+  border-top: 2rpx solid #ccc;
+  background-color: white;
+  margin: 850rpx 2% 100rpx 2%;
+  height: 640rpx;
+  border-radius: 20rpx;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 7px -2px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.all .bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30rpx 20rpx;
+  padding: 10rpx;
+  font-size: 36rpx;
+}
+
+.all .bar image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.all .week {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-bottom: 20rpx;
+  margin: 10rpx 20rpx 0 20rpx;
+  font-weight: 600;
+  color: #D8412B;
+  border-bottom: 1px solid #ccc;
+}
+
+.all .days {
+  margin: 0rpx 20rpx 20rpx 20rpx;
+  padding: 10rpx;
+  border-radius: 10px;
+  background-color: white;
+  color: #D8412B;
+  font-weight: 900;
+}
+
+.all .columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.all .columns .rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.all .columns .rows .cell {
+  width: 80rpx;
+  height: 72rpx;
+  margin: 3rpx;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

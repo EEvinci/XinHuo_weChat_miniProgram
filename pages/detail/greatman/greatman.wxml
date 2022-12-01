@@ -1,0 +1,21 @@
+<!--pages/detail/greatman/greatman.wxml-->
+<view>
+  <view class="Title">
+  <view>{{Article[0].title}}</view>
+  </view>
+
+  <view class="bar">
+    <view class="text">{{Article[0].type}}</view>
+    <view class="text1">{{Article[0].time}}</view>
+  </view>
+
+  <view class="Content">
+    <view>{{Article[0].content}}</view>
+  </view>
+
+  <view class="Picture">
+    <image src="{{Article[0].images}}"></image>
+  </view>
+
+  <view class="Tail">——————已经到底了——————</view>
+</view>

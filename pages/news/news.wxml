@@ -1,0 +1,107 @@
+<!--pages/news/news.wxml-->
+
+<!-- 轮播动画 -->
+<view class="swiper_container">
+  <swiper interval="3000" indicator-dots="true" autoplay="true" circular="true" style="height: 100%;">
+    <swiper-item>
+      <image class="image_banner" mode="widthFix" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/c201600c-f681-4b92-9b61-bcc0b36a4e80.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="image_banner" mode="widthFix" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/660f5060-8a0d-438e-86c3-ed5e40b93492.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="image_banner" mode="widthFix" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/4bddbbef-58e1-40c6-b570-4467abffa875.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="image_banner" mode="widthFix" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/bbedad11-a8fb-4f4d-85c0-601e9990352a.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 城院头条 -->
+<view class="text_view">
+  <text class="text_title">城院头条</text>
+  <text class="text_text">党的二十大主席团举行第二次会议 习近平主持会议</text>
+</view>
+
+<!-- 上下两部分设置一定间距 -->
+<view class="null_line"></view>
+
+<!-- 动态、风采、获奖标签页  -->
+<view class="label_title">
+  <!-- tab布局 -->
+  <view class='navBox'>
+        <view class='titleBox' bindtap='titleClick' data-idx='0'>
+            <text class="{{0 == currentIndex ? 'fontColorBox' : ''}}">城院动态</text>
+            <hr class="{{0 == currentIndex ? 'lineBox' : 'notLineBox'}}" />
+        </view>
+        <view class='titleBox' bindtap='titleClick' data-idx='1'>
+            <text class="{{1 == currentIndex ? 'fontColorBox1' : ''}}">党员风采</text>
+            <hr class="{{1 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+        </view>
+        <view class='titleBox' bindtap='titleClick' data-idx='2'>
+            <text class="{{2 == currentIndex ? 'fontColorBox2' : ''}}">学子获奖</text>
+            <hr class="{{2 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+        </view>
+    </view>
+    <!-- 三个页面（城院动态、党员风采、学子获奖）内容展示 -->
+    <swiper class='swiperTtemBox' bindchange='pagechange' current='{{currentIndex}}'>
+      <swiper-item class="swiperTtemBox">
+        <!-- 第一部分——城院动态 -->
+        <view class="ZUCC_news" wx:for="{{Article}}"
+        wx:key="index" wx:if="{{item.type=='城院动态'}}"
+        bindtap="gotodetail" data-articleid="{{item.id}}">
+          <!-- 文字区域 -->
+          <view class="ZUCC_news_textarea">
+            <view class="ZUCC_news_title">{{item.title}}</view>
+            <view class="ZUCC_news_source">{{item.writer}}</view>
+            <view class="ZUCC_news_publishdate">{{item.time}}</view>
+          </view>
+          <!-- 图片区域 -->
+            <image class="ZUCC_news_picture" style="width: 140px;height: 100px;" src="{{item.images}}"></image>
+        </view>
+      </swiper-item>
+      <swiper-item class="swiperTtemBox">
+        <!-- 第二部分——党员风采 -->
+        <view wx:for="{{PartyMember}}" wx:key="index" 
+        wx:if="{{index==party_member_index}}">
+          <!-- 页面顶部 -->
+          <view class="null_line"></view>
+          <view class="ZUCC_partymenber_top"
+          bindtap="gotodetail" data-articleid="{{item.id}}">
+            <!-- 标题部分 -->
+            <view class="ZUCC_partymenber_title">{{item.organization}}</view>
+          </view>
+          <!-- 页面左部 -->
+          <view class="ZUCC_partymenber_left" 
+          bindtap="gotodetail" data-articleid="{{item.id}}">
+            <image style="width: 100%;height: 100%;" src="{{item.images}}"></image>
+          </view>
+          <!-- 页面右部 -->
+          <view class="ZUCC_partymenber_right">
+            <view style="margin-top: 10px;" class="ZUCC_partymenber_text">{{item.stuName}}</view>
+            <view style="margin-top: 10px;" class="ZUCC_partymenber_text">{{item.stuClass}}</view>
+            <image style="width: 100px;height: 100px;margin-top: 30px;" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/3bcccc80-35a0-4f63-9ecf-210e9403d69c.jpg">
+            </image>
+            <image style="width: 40px;height: 40px;margin-right: 23px;margin-top: 20px;" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/73482974-9358-49ad-84a3-bb7b6f8040d3.jpg" bindtap = "Prev"></image>
+            <image style="width: 40px;height: 40px;margin-left: 23px;margin-top: 20px;" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/795e273b-3b7e-4bc5-99ee-73997eaa1e69.jpg" bindtap = "Next"></image>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item class="swiperTtemBox">
+        <!-- 第三部分——学子获奖 -->
+        <view class="ZUCC_news" wx:for="{{Article}}"
+        wx:key="index" wx:if="{{item.type=='学子获奖'}}"
+        bindtap="gotodetail" data-articleid="{{item.id}}">
+        <!-- 图片区域 -->
+          <image class="ZUCC_news_picture1" style="width: 120px;height: 100px;" src="{{item.images}}"></image>
+        <!-- 文字区域 -->
+        <view class="ZUCC_news_textarea1">
+          <view class="ZUCC_news_title">{{item.title}}</view>
+          <view class="ZUCC_news_source">{{item.writer}}</view>
+          <view class="ZUCC_news_publishdate">{{item.time}}</view>
+        </view>
+        </view>
+      </swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,133 @@
+<view class="root">
+    <!-- Tab布局 -->
+    <view class='navBox'>
+        <view class='titleBox' bindtap='titleClick' data-idx='0'>
+            <text class="{{0 == currentIndex ? 'fontColorBox' : ''}}">党史人物</text>
+            <hr class="{{0 == currentIndex ? 'lineBox' : 'notLineBox'}}" />
+        </view>
+        <view class='titleBox' bindtap='titleClick' data-idx='1'>
+            <text class="{{1 == currentIndex ? 'fontColorBox1' : ''}}">党史故事</text>
+            <hr class="{{1 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+        </view>
+        <view class='titleBox' bindtap='titleClick' data-idx='2'>
+            <text class="{{2 == currentIndex ? 'fontColorBox2' : ''}}">党史知识</text>
+            <hr class="{{2 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+        </view>
+    </view>
+    
+    <swiper class='swiperTtemBox' bindchange='pagechange' current='{{currentIndex}}'>
+        <swiper-item class='swiperTtemBox'>
+            <block wx:for="{{people}}" >
+                <view class="people_list" bindtap="gotopeopledetail" data-peoplename="{{item.name}}">
+                    <image src="{{item.image}}"></image>
+                    <view class="list_detail">
+                        <text class="detail_title">{{item.name}}\n</text>
+                        <text class="detail_content">{{item.description}}</text>
+                    </view>
+                </view>
+            </block>
+            <view class="bottom1"></view>
+        </swiper-item>
+        <swiper-item class='swiperTtemBox'>
+            <!-- 轮播动画 -->
+            <view class="page_index_lunbo">
+                <view class="swiper_container">
+                    <!-- 轮播组件 -->
+                    <swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" interval="3000" duration="1000" indicator-color="#d0d0d0" indicator-active-color="#820000">
+                        <block wx:for="{{images}}" wx:key="id"></block>
+                        <!-- 每一个轮播的项目 -->
+                        <swiper-item>
+                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/e3d2348f-6fb8-493c-a562-e6ebadad7fd1.jpeg" mode="aspectFill"></image>
+                        </swiper-item>
+                        <swiper-item>
+                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/4a130ed4-6f7f-4704-9a15-dfd1a0cb90e7.jpeg" mode="aspectFill"></image>
+                        </swiper-item>
+                        <swiper-item>
+                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/f2847620-5112-43eb-ac96-7b2e60ff303c.jpeg" mode="aspectFill"></image>
+                        </swiper-item>
+                    </swiper>
+                </view>
+            </view>
+            <!-- 红色书籍 -->
+            <view class="red_book">
+                <view class="mode_detail">
+                    <image src="https://img9.doubanio.com/view/subject/m/public/s33463166.jpg"></image>
+                    <text>中共党史</text>
+                </view>
+                <view class="mode_detail">
+                    <image src="https://img2.doubanio.com/view/subject/m/public/s16239341.jpg"></image>
+                    <text>党史概论</text>
+                </view>
+                <view class="mode_detail">
+                    <image src="https://img1.doubanio.com/view/subject/m/public/s11232499.jpg"></image>
+                    <text>党史细节</text>
+                </view>
+            </view>
+            <view class="party_history">
+                <view class="history_detail">
+                    <image class="history_overall" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/771a2b13-7628-43b4-a738-839b1e5eaa6e.png">
+                    </image>
+                    <view class="history_title">
+                        <text class="history_year">—{{yearHistory}}年—\n</text>
+                        <text class="history_day">{{mydate}}</text>
+                    </view>
+                    <view class="history_content">{{todayHistory.content}}</view>
+                </view>
+            </view>
+        </swiper-item>
+
+        <swiper-item class='swiperTtemBox'>
+            <!-- 四个时期党史模块 -->
+            <view class="party_period">
+                <!-- 轮播动画 -->
+                <view class="page_index_lunbo">
+                    <view class="swiper_container">
+                        <!-- 轮播组件 -->
+                        <swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" interval="3000" duration="1000" indicator-color="#d0d0d0" indicator-active-color="#820000">
+                            <block wx:for="{{images}}" wx:key="id"></block>
+                            <!-- 每一个轮播的项目 -->
+                            <swiper-item>
+                                <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/82c9c746-ac37-4e20-9c81-4b355089babf.jpeg"></image>
+                            </swiper-item>
+                            <swiper-item>
+                                <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/4b6e5c00-39e0-460b-a2ea-64d789d9b368.jpeg"></image>
+                            </swiper-item>
+                            <swiper-item>
+                                <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1695b683-8780-4b8b-91ba-cae273cd5fbd.jpg"></image>
+                            </swiper-item>
+                            <swiper-item>
+                                <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/2b125019-333f-455b-b446-0ddcdd967150.jpeg"></image>
+                            </swiper-item>
+                        </swiper>
+                    </view>
+                </view>
+            </view>
+            <!-- 详情页展示 -->
+            <view class="period_detail">
+                <view class="old_period" bindtap="gotoperioddetail" 
+                data-period="新民主主义革命时期">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/82c9c746-ac37-4e20-9c81-4b355089babf.jpeg" mode="aspectFit"></image>
+                    <text class="title">新民主主义革命时期\n<text class="time">1921年7月中国共产党成立至1949年10月中华人民共和国成立</text></text>
+                    
+                </view>
+                <view class="new_period" bindtap="gotoperioddetail" 
+                data-period="社会主义革命建设时期">
+                    <text class="title">社会主义革命和建设时期\n<text class="time">从1949年10月至1978年12月党的十一届三中全会召开</text></text>
+                    
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/4b6e5c00-39e0-460b-a2ea-64d789d9b368.jpeg" mode="aspectFit"></image>
+                </view>
+                <view class="old_period" bindtap="gotoperioddetail" 
+                data-period="改革开放和社会主义现代化建设新时期">
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1695b683-8780-4b8b-91ba-cae273cd5fbd.jpg" mode="aspectFit"></image>
+                    <text class="title">改革开放和社会主义建设新时期\n<text class="time">从1978年12月至2012年11月党的十八大召开</text></text>
+                </view>
+                <view class="new_period" bindtap="gotoperioddetail" 
+                data-period="中国特色社会主义建设时期">
+                    <text class="title">中国特色社会主义新时期\n<text class="time">从2012年11月至今</text></text>
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/2b125019-333f-455b-b446-0ddcdd967150.jpeg" mode="aspectFit"></image>
+                </view>
+            </view>
+            <view class="bottom2"></view>
+        </swiper-item>
+    </swiper>
+</view>

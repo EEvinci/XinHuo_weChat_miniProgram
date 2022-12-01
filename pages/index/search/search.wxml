@@ -1,0 +1,37 @@
+<!-- 搜索跳转页面 -->
+<view>
+    <view>
+        <!-- 外边框 -->
+        <view class="search_bar">
+            <!-- 内部框 -->
+            <view class="search_bar_form">
+                <!-- 搜索框 -->
+                <view class="search_bar_box">
+                    <!-- 导入图标 -->
+                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/ca2608c6-4ff0-420b-a993-baade2c84c09.png" class="searchcion" size='14'></image>
+                    <input type="text" class="search_bar_input" placeholder="请输入搜索内容" value="" bindinput="bindSearchInput" />
+                </view>
+            </view>
+            <!-- 取消搜索 -->
+            <view class="search_bar_button" bindtap='searchBegin'>搜索</view>
+        </view>
+    </view>
+</view>
+
+<!-- 搜索结果 -->
+<block wx:for="{{searchResult}}" wx:key="index">
+    <view class="ZUCC_search">
+        <!-- 图片区域 -->
+        <view class="ZUCC_search_picture" bindtap="gotodetail" data-articleid="{{item.id}}">
+            <image style="width: 140px;height: 100px;" src="{{item.images}}"></image>
+        </view>
+        <!-- 文字区域 -->
+        <view class="ZUCC_search_textarea" bindtap="gotodetail" data-articleid="{{item.id}}">
+            <view class="ZUCC_search_title">{{item.title}}</view>
+            <view class="ZUCC_search_source">{{item.writer}}</view>
+            <view class="ZUCC_search_publishdate">{{item.time}}</view>
+        </view>
+    </view>
+</block>
+
+<view class="search_tail">—————没有更多内容了—————</view>

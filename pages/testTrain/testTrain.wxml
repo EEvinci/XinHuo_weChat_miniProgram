@@ -1,0 +1,87 @@
+
+<view class="root">
+    <view class="nav_top">
+        <text class="top_button" bindtap="goToAnswerSheet">答题记录</text>
+    </view>
+    <view class="test_description">
+        <view class="nav_title">答题训练</view>
+        <view class="nav_explain">无跬步无以至千里，无小流无以成海流</view>
+    </view>
+    <view class="test_module">
+        <view class="test_detail" bindtap="goToDailyTrain">
+            <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/45b160fd-076b-4700-80c8-52c52438a4c0.png"></image>
+            <view class="test_title">每日答题</view>
+            <view class="test_explain">太阳每天都是新的</view>
+        </view>
+        <view class="test_detail" bindtap="goToSpecialTrain">
+            <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/d42612f5-bfac-4a42-8bf6-d061ec683aa6.png"></image>
+            <view class="test_title">专项答题</view>
+            <text class="test_explain">术业有专攻\n道义有精论</text>
+        </view>
+        <view class="test_detail" bindtap="goToWeeklyTrain">
+            <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/f180ddbe-d368-4ce7-9560-e201a3550f79.png"></image>
+            <view class="test_title">每周答题</view>
+            <text class="test_explain">温故而知新\n持之以恒</text>
+        </view>
+    </view>
+    <view class="test_score">
+        <view class="test_description">
+            <view class="nav_title">答题积分</view>
+            <view class="nav_explain">过程就是奖励</view>
+        </view>
+        <view class="score_list" bindtap="goToScoreManagement">
+            <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/88fdc817-b832-45c6-8ffd-4f7af9df2c10.png"></image>
+            <text>积分商城</text>
+        </view>
+    </view>
+    <view class="my_score">
+        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/a0a8316f-61af-48f4-8110-66b796bc98d3.jpg"></image>
+        <text>我的积分:223</text>
+    </view>
+
+    <view class="ranking_total">
+        <view class="ranking_list">
+        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/ece5ea26-4863-4fbc-844c-4ffe044e216d.gif"></image>
+        <text class="ranking_title">排行榜</text>
+        <!-- Tab布局 -->
+        <view class='navBox'>
+            <view class='titleBox' bindtap='titleClick' data-idx='0'>
+                <text class="{{0 == currentIndex ? 'fontColorBox' : ''}}">本组织排行榜</text>
+                <hr class="{{0 == currentIndex ? 'lineBox' : 'notLineBox'}}" />
+            </view>
+            <view class='titleBox' bindtap='titleClick' data-idx='1'>
+                <text class="{{1 == currentIndex ? 'fontColorBox1' : ''}}">全校排行榜</text>
+                <hr class="{{1 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+            </view>
+        </view>
+    </view>
+    <swiper class='swiperTtemBox' bindchange='pagechange' current='{{currentIndex}}'>
+        <swiper-item class='swiperTtemBox'>
+            <block wx:for="{{organizationRankingList}}" wx:key="index">
+                <view class="ranking_detail">
+                    <view class="ranking_left">
+                        <view class="{{index == 0 ? 'left_number1' : (index == 1 ? 'left_number2' : (index == 2 ? 'left_number3' : 'left_number'))}}">{{index+1}}</view>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class="ranking_right">
+                        <text>积分：{{item.score}}</text>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+        <swiper-item class='swiperTtemBox'>
+            <block wx:for="{{schoolRankingList}}" wx:key="index">
+                <view class="ranking_detail">
+                    <view class="ranking_left">
+                        <view class="{{index == 0 ? 'left_number1' : (index == 1 ? 'left_number2' : (index == 2 ? 'left_number3' : 'left_number'))}}">{{index+1}}</view>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class="ranking_right">
+                        <text>积分：{{item.score}}</text>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+    </swiper>
+    </view>
+</view>
