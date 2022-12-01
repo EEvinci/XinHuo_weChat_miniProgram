@@ -1,0 +1,1 @@
+# XinHuo_weChat_miniProgram
