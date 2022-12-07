@@ -1,2 +1,5 @@
 <!--pages/detail/fourperiod/fourperiod.wxml-->
-<text>{{Article[0].content}}</text>
+<image style="width: 100%;margin-bottom: 0.5cm;" src="{{Article[0].images}}"></image>
+<image style="width: 100%;margin-bottom: 0.5cm;" src="{{Article[0].images}}"></image>
+<image style="width: 100%;margin-bottom: 0.5cm;" src="{{Article[0].images}}"></image>
+<view style="text-align: center;font-size: large;color: grey;">----已经到底了----</view>

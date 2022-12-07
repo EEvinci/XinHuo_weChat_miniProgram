@@ -9,17 +9,17 @@
     </view>
     <view class="test_module">
         <view class="test_detail" bindtap="goToDailyTrain">
-            <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/45b160fd-076b-4700-80c8-52c52438a4c0.png"></image>
+            <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—我要答题—每日答题.png"></image>
             <view class="test_title">每日答题</view>
             <view class="test_explain">太阳每天都是新的</view>
         </view>
         <view class="test_detail" bindtap="goToSpecialTrain">
-            <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/d42612f5-bfac-4a42-8bf6-d061ec683aa6.png"></image>
+            <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—我要答题—专项答题.png"></image>
             <view class="test_title">专项答题</view>
             <text class="test_explain">术业有专攻\n道义有精论</text>
         </view>
         <view class="test_detail" bindtap="goToWeeklyTrain">
-            <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/f180ddbe-d368-4ce7-9560-e201a3550f79.png"></image>
+            <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—我要答题—每周答题.png"></image>
             <view class="test_title">每周答题</view>
             <text class="test_explain">温故而知新\n持之以恒</text>
         </view>
@@ -30,18 +30,18 @@
             <view class="nav_explain">过程就是奖励</view>
         </view>
         <view class="score_list" bindtap="goToScoreManagement">
-            <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/88fdc817-b832-45c6-8ffd-4f7af9df2c10.png"></image>
+            <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—我要答题—积分商城.png"></image>
             <text>积分商城</text>
         </view>
     </view>
     <view class="my_score">
-        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/a0a8316f-61af-48f4-8110-66b796bc98d3.jpg"></image>
+        <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—我要答题—我的积分.jpg"></image>
         <text>我的积分:223</text>
     </view>
 
     <view class="ranking_total">
         <view class="ranking_list">
-        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/ece5ea26-4863-4fbc-844c-4ffe044e216d.gif"></image>
+        <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—我要答题—排行榜.gif"></image>
         <text class="ranking_title">排行榜</text>
         <!-- Tab布局 -->
         <view class='navBox'>

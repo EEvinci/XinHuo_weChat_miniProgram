@@ -33,7 +33,7 @@
             </view> -->
 
             <view class="topic_hint" bindtap="clickme">
-                <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/c43c3a5a-6531-4d03-8156-d54098e5ae2c.png"></image>
+                <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页-我要答题-每日答题-提示.png"></image>
                 <text>查看提示</text>
             </view>
             <!--屏幕背景变暗的背景  -->

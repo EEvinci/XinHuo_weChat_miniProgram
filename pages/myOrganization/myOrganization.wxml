@@ -1,9 +1,9 @@
 <view class="root">
-    <image class="my_background" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/400a7c6b-b2fe-4b65-bf00-4efdaf223937.jpeg"></image>
+    <image class="my_background" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的——我的党组织——背景图.jpeg"></image>
     <view class="my_organization">
         <!-- 我的党组织 -->
         <view class="my_title">
-            <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/acf3f817-723d-4431-a8ac-2a6781fefed2.png"></image>
+            <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的——我的党组织—党组织icon.png"></image>
             <view class="my_class">\n{{organization}}\n</view>
             <view class="my_college">所属学院：计算机与计算科学学院</view>
         </view>
@@ -11,7 +11,7 @@
         <view class="my_info">
             <view class="title" bindtap="moreNews">
                 <text class="title_text">组织资讯</text>
-                <image class="title_img" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/c244f9be-cad3-466b-ac90-24923e3e24ce.png"></image>
+                <image class="title_img" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的-我的党组织-列表箭头.png"></image>
             </view>
             <view class="info_content" wx:for="{{news}}" wx:key="index">
                 <view class="info_title">{{item.title}}</view>
@@ -22,10 +22,10 @@
         <view class="my_meeting">
             <view class="title" bindtap="moreMeetings">
                 <text class="title_text">组织会议</text>
-                <image class="title_img" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/c244f9be-cad3-466b-ac90-24923e3e24ce.png"></image>
+                <image class="title_img" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的-我的党组织-列表箭头.png"></image>
             </view>
             <view class="meeting_content" wx:for="{{meetings}}" wx:key="index">
-                <image class="meeting_left" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1e43e620-1acf-4362-bbef-10cda269045e.jpeg"></image>
+                <image class="meeting_left" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的——我的党组织——党徽.jpeg"></image>
                 <view class="meeting_right">
                     <view class="meeting_title">{{item.title}}</view>
                     <view class="meeting_type">{{item.type}}</view>

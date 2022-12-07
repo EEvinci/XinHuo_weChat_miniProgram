@@ -5,7 +5,7 @@
         </view>
         <block wx:for="{{meetings}}" wx:key="index">
             <view class="meeting_content">
-                <image class="meeting_left" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1e43e620-1acf-4362-bbef-10cda269045e.jpeg"></image>
+                <image class="meeting_left" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的——我的党组织——党徽.jpeg"></image>
                 <view class="meeting_right">
                     <view class="meeting_title">{{item.title}}</view>
                     <view class="meeting_type">{{item.type}}</view>

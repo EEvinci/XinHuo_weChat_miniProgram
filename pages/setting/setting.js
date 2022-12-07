@@ -7,23 +7,23 @@ Page({
     data: {
         settings: [{
                 title: "联系我们",
-                image: "https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/85c773d3-4b5c-4465-9966-621d3e63bc68.png"
+                image: "http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的-设置-联系我们.png"
             },
             {
                 title: "隐私政策",
-                image: "https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/9d95c673-42ea-4fe7-859e-ec046e64bbaa.png"
+                image: "http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的-设置-隐私政策.png"
             },
             {
                 title: "使用手册",
-                image: "https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/670bccca-cca3-4fc6-ba5a-5bb8c6a4c12f.png"
+                image: "http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的-设置-使用手册.png"
             },
             {
                 title: "关于我们",
-                image: "https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/745306b2-3bea-4b25-8644-4f04db19a4f2.png"
+                image: "http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的-设置-关于我们.png"
             },
             {
                 title: "通用",
-                image: "https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/f821433d-ecf4-4011-96e2-c3a9e190d07c.png"
+                image: "http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的-设置-通用.png"
             },
         ],
 

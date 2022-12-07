@@ -10,7 +10,7 @@ Page({
     data: {
         currentIndex: 0, //默认是活动项
         title: ['荣誉积分', '积分兑换', '积分历史'],
-        image: ['https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/7ba8cefb-77a6-47a9-9385-6e11291eae13.jpg', 'https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/811319ab-402b-4e5a-9a25-86dd62c99fa0.jpg', 'https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/edbb847d-7f2b-408e-b078-3c9ad47cb362.jpg'],
+        image: ['http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—积分商城—积分获取——背景图 .jpg', 'http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—积分商城—积分商城——背景图.jpg', 'http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—积分商城—历史记录——背景图.jpg'],
         totalScore: 223,
         storeList: [],
         records: [],

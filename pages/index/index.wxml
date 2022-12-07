@@ -5,7 +5,7 @@
   <view class="search" bindtap='search'>
     <view class="search_box">
       <!-- 导入图标 -->
-      <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/ca2608c6-4ff0-420b-a993-baade2c84c09.png" class="searchcion" size='14'></image>
+      <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—搜索.png" class="searchcion" size='14'></image>
       <!-- <icon class="searchcion" size='16' type='search'></icon> -->
       <input class="sousuo" disabled placeholder="智慧党建" />
     </view>
@@ -25,7 +25,7 @@
 
   <!-- 扫一扫 -->
   <view class="index_scan">
-    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/785c498e-94b1-4e7d-aba9-9ebd1c215aa7.png" class="scan" mode="widthFix" bindtap="scanCode"></image>
+    <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—扫一扫.png" class="scan" mode="widthFix" bindtap="scanCode"></image>
   </view>
 </view>
 
@@ -37,13 +37,13 @@
       <block wx:for="{{images}}" wx:key="id"></block>
       <!-- 每一个轮播的项目 -->
       <swiper-item>
-        <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/8e5d17ef-f84c-4323-aee3-dd37a4eb104b.png"></image>
+        <image class="image_banner" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页-轮播1-二十大.png"></image>
       </swiper-item>
       <swiper-item>
-        <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/796d6a13-cd13-4e36-a720-040a80ce6638.jpg"></image>
+        <image class="image_banner" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页-轮播2-建党精神.jpg"></image>
       </swiper-item>
       <swiper-item>
-        <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/a616e4c5-e9e7-4378-a7e7-f30dbcb39a7a.jpg"></image>
+        <image class="image_banner" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页-轮播3-跟党走.jpg"></image>
       </swiper-item>
     </swiper>
   </view>
@@ -55,7 +55,7 @@
   <view class="menu">
     <view class="img_menu" bindtap="goToThemeLive">
       <view class="img">
-        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/db1fd24c-7a6c-48a5-a82c-b25f03fe7075.png"></image>
+        <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—主题生活.png"></image>
       </view>
       <text>主题生活</text>
     </view>
@@ -64,7 +64,7 @@
   <view class="menu">
     <view class="img_menu" bindtap="goToCompletionTest">
       <view class="img">
-        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/6d84ca5e-10e6-4657-96ac-895a9bbf7424.png"></image>
+        <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—结业测试.png"></image>
       </view>
       <text>结业测试</text>
     </view>
@@ -73,7 +73,7 @@
   <view class="menu">
     <view class="img_menu" bindtap="goToTestTrain">
       <view class="img">
-        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1ccb9604-5c30-4443-8ea4-bae3ec6acd95.png"></image>
+        <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—我要答题.png"></image>
       </view>
       <text>我要答题</text>
     </view>
@@ -82,7 +82,7 @@
   <view class="menu">
     <view class="img_menu" bindtap="goToSign">
       <view class="img">
-        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/d41d0650-e0d9-4759-9191-78d5b6b871a1.png"></image>
+        <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—打卡签到.png"></image>
       </view>
       <text>打卡签到</text>
     </view>
@@ -91,7 +91,7 @@
   <view class="menu">
     <view class="img_menu" bindtap="goToKnowledgeBase">
       <view class="img">
-        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/9718a321-afa6-4eca-a483-96d39f8d6c22.png"></image>
+        <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—党政知识库.png"></image>
       </view>
       <text>党政知识库</text>
     </view>
@@ -100,7 +100,7 @@
   <view class="menu">
     <view class="img_menu" bindtap="goToImportantNotice">
       <view class="img">
-        <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/0b74802c-dca9-4906-9fe8-546f03e4ed10.png"></image>
+        <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—重要通知.png"></image>
       </view>
       <text>重要通知</text>
     </view>
@@ -113,13 +113,13 @@
   <view class="bar">
     <!-- 上一个月 -->
     <view class="previous" bindtap="handleCalendar" data-handle="prev">
-      <image src='https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/3b56ad5d-82d8-4594-b126-42caf4fdaf71.png'></image>
+      <image src='http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—日历左滑.png'></image>
     </view>
     <!-- 显示年月 -->
     <view class="date">{{cur_year}} 年 {{cur_month}} 月</view>
     <!-- 下一个月 -->
     <view class="next" bindtap="handleCalendar" data-handle="next">
-      <image src='https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/bc86d6f1-776b-4edd-a27b-f8861031c1e0.png'></image>
+      <image src='http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—日历右滑.png'></image>
     </view>
   </view>
   <!-- 显示星期 -->

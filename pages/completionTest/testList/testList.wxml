@@ -3,7 +3,7 @@
     <view wx:for="{{testList}}" >
         <view class="test_list" bindtap="goTotest" 
         data-paperid="{{item.id}}">
-            <image class="list_image" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/3ca651d4-0c53-44b0-a6b4-154215b2ff54.png"></image>
+            <image class="list_image" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页-结业测试-考试列表.png"></image>
             <view class="list_detail" >
                 <text class="detail_title">{{item.title}}</text>
                 <text class="detail_content">测试开始时间：{{testTime[index]}}</text>

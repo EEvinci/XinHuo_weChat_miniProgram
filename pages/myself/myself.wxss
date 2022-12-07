@@ -117,7 +117,7 @@
     width: 90%;
     border-radius: 30rpx;
     /* 放在云服务台 */
-    background-image: url("https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/ace17e19-4453-43b1-974a-49e53dd5241d.jpg");
+    background-image: url("http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的—我要宣誓.jpg");
     background-size: 100% 100%;
     display: flex;
     justify-content: center;

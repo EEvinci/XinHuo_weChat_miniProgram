@@ -7,13 +7,13 @@
         <view class="bar">
             <!-- 上一个月 -->
             <view class="previous" bindtap="handleCalendar" data-handle="prev">
-            <image src='https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/ea0e23a0-c7d5-4800-952b-1a3f5ebcc3b1.png'></image>
+            <image src='http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—日历左滑.png'></image>
             </view>
             <!-- 显示年月 -->
             <view class="date">{{cur_year}} 年 {{cur_month}} 月</view>
             <!-- 下一个月 -->
             <view class="next" bindtap="handleCalendar" data-handle="next">
-            <image src='https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/c9f1f877-c7fd-4095-8c82-463e2024cbd9.png'></image>
+            <image src='http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—日历右滑.png'></image>
             </view>
         </view>
         <!-- 显示星期 -->

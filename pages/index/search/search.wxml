@@ -8,7 +8,7 @@
                 <!-- 搜索框 -->
                 <view class="search_bar_box">
                     <!-- 导入图标 -->
-                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/ca2608c6-4ff0-420b-a993-baade2c84c09.png" class="searchcion" size='14'></image>
+                    <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—搜索.png" class="searchcion" size='14'></image>
                     <input type="text" class="search_bar_input" placeholder="请输入搜索内容" value="" bindinput="bindSearchInput" />
                 </view>
             </view>

@@ -11,7 +11,7 @@
                 </view>
                 <view class="header_inf_bot">我的身份：{{identity}}</view>
             </view>
-            <image class="header_search" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/8d125c19-ffa2-4587-92a6-70a22294a257.png"></image>
+            <image class="header_search" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—扫一扫.png"></image>
         </view>
         <view class="myself_my_bottom">
             <view class="bottom_inf1" bindtap="goToScoreManagement">积分：233</view>
@@ -26,24 +26,24 @@
     <!-- 我的五个界面 -->
     <view class="myself_option">
         <view class='option_item' bindtap="goToMyOrganization">
-            <image class="option_img" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/5b929709-7910-4406-b461-52f9d554fd10.png"></image>
+            <image class="option_img" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的—我的党组织.png"></image>
             <view class="option_title">我的党组织</view>
         </view>
         <view class="line"></view>
 
         <view class='option_item' bindtap="goToAnswerSheet">
-            <image class="option_img" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1acc1b7d-8222-4f0c-8b4f-d445218c7145.png"></image>
+            <image class="option_img" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的—答题记录.png"></image>
             <view class="option_title">答题记录</view>
         </view>
         <view class="line"></view>
 
         <view class='option_item' bindtap="goToScoreManagement">
-            <image class="option_img" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/5ff111c4-ba2b-401d-9f08-e6be064c1b44.png"></image>
+            <image class="option_img" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的—积分管理.png"></image>
             <view class="option_title">积分管理</view>
         </view>
         <view class="line"></view>
         <view class='option_item' bindtap="goToSetting">
-            <image class="option_img" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/2c70b452-1718-4975-aa7f-43429a32c76a.png"></image>
+            <image class="option_img" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/我的—设置.png"></image>
             <view class="option_title">设置</view>
         </view>
     </view>

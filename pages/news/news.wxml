@@ -4,16 +4,16 @@
 <view class="swiper_container">
   <swiper interval="3000" indicator-dots="true" autoplay="true" circular="true" style="height: 100%;">
     <swiper-item>
-      <image class="image_banner" mode="widthFix" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/c201600c-f681-4b92-9b61-bcc0b36a4e80.png"></image>
+      <image class="image_banner" mode="widthFix" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/要闻——轮播图1.png"></image>
     </swiper-item>
     <swiper-item>
-      <image class="image_banner" mode="widthFix" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/660f5060-8a0d-438e-86c3-ed5e40b93492.png"></image>
+      <image class="image_banner" mode="widthFix" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/要闻——轮播图2.png"></image>
     </swiper-item>
     <swiper-item>
-      <image class="image_banner" mode="widthFix" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/4bddbbef-58e1-40c6-b570-4467abffa875.png"></image>
+      <image class="image_banner" mode="widthFix" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/要闻——轮播图3.png"></image>
     </swiper-item>
     <swiper-item>
-      <image class="image_banner" mode="widthFix" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/bbedad11-a8fb-4f4d-85c0-601e9990352a.jpg"></image>
+      <image class="image_banner" mode="widthFix" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/要闻——轮播图4.png"></image>
     </swiper-item>
   </swiper>
 </view>
@@ -81,10 +81,10 @@
           <view class="ZUCC_partymenber_right">
             <view style="margin-top: 10px;" class="ZUCC_partymenber_text">{{item.stuName}}</view>
             <view style="margin-top: 10px;" class="ZUCC_partymenber_text">{{item.stuClass}}</view>
-            <image style="width: 100px;height: 100px;margin-top: 30px;" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/3bcccc80-35a0-4f63-9ecf-210e9403d69c.jpg">
+            <image style="width: 100px;height: 100px;margin-top: 30px;" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/要闻—党员风采—党徽.jpg">
             </image>
-            <image style="width: 40px;height: 40px;margin-right: 23px;margin-top: 20px;" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/73482974-9358-49ad-84a3-bb7b6f8040d3.jpg" bindtap = "Prev"></image>
-            <image style="width: 40px;height: 40px;margin-left: 23px;margin-top: 20px;" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/795e273b-3b7e-4bc5-99ee-73997eaa1e69.jpg" bindtap = "Next"></image>
+            <image style="width: 40px;height: 40px;margin-right: 23px;margin-top: 20px;" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—日历左滑.png" bindtap = "Prev"></image>
+            <image style="width: 40px;height: 40px;margin-left: 23px;margin-top: 20px;" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页—日历右滑.png" bindtap = "Next"></image>
           </view>
         </view>
       </swiper-item>

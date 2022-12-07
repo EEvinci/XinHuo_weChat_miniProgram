@@ -37,13 +37,13 @@
                         <block wx:for="{{images}}" wx:key="id"></block>
                         <!-- 每一个轮播的项目 -->
                         <swiper-item>
-                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/e3d2348f-6fb8-493c-a562-e6ebadad7fd1.jpeg" mode="aspectFill"></image>
+                            <image class="image_banner" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页-党政知识库-党史故事1 .jpeg" mode="aspectFill"></image>
                         </swiper-item>
                         <swiper-item>
-                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/4a130ed4-6f7f-4704-9a15-dfd1a0cb90e7.jpeg" mode="aspectFill"></image>
+                            <image class="image_banner" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页-党政知识库-党史故事2.jpeg" mode="aspectFill"></image>
                         </swiper-item>
                         <swiper-item>
-                            <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/f2847620-5112-43eb-ac96-7b2e60ff303c.jpeg" mode="aspectFill"></image>
+                            <image class="image_banner" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页-党政知识库-党史故事3.jpeg" mode="aspectFill"></image>
                         </swiper-item>
                     </swiper>
                 </view>
@@ -65,7 +65,7 @@
             </view>
             <view class="party_history">
                 <view class="history_detail">
-                    <image class="history_overall" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/771a2b13-7628-43b4-a738-839b1e5eaa6e.png">
+                    <image class="history_overall" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页——党政知识库——党史故事——历史上的今天.jpg">
                     </image>
                     <view class="history_title">
                         <text class="history_year">—{{yearHistory}}年—\n</text>
@@ -87,16 +87,16 @@
                             <block wx:for="{{images}}" wx:key="id"></block>
                             <!-- 每一个轮播的项目 -->
                             <swiper-item>
-                                <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/82c9c746-ac37-4e20-9c81-4b355089babf.jpeg"></image>
+                                <image class="image_banner" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页——党政知识库——党史知识1.jpeg"></image>
                             </swiper-item>
                             <swiper-item>
-                                <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/4b6e5c00-39e0-460b-a2ea-64d789d9b368.jpeg"></image>
+                                <image class="image_banner" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页——党政知识库——党史知识2.jpg"></image>
                             </swiper-item>
                             <swiper-item>
-                                <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1695b683-8780-4b8b-91ba-cae273cd5fbd.jpg"></image>
+                                <image class="image_banner" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页——党政知识库——党史知识3.jpeg"></image>
                             </swiper-item>
                             <swiper-item>
-                                <image class="image_banner" src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/2b125019-333f-455b-b446-0ddcdd967150.jpeg"></image>
+                                <image class="image_banner" src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页——党政知识库——党史知识4.jpeg"></image>
                             </swiper-item>
                         </swiper>
                     </view>
@@ -106,7 +106,7 @@
             <view class="period_detail">
                 <view class="old_period" bindtap="gotoperioddetail" 
                 data-period="新民主主义革命时期">
-                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/82c9c746-ac37-4e20-9c81-4b355089babf.jpeg" mode="aspectFit"></image>
+                    <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页——党政知识库——党史知识—新民主主义时期.jpeg" mode="aspectFit"></image>
                     <text class="title">新民主主义革命时期\n<text class="time">1921年7月中国共产党成立至1949年10月中华人民共和国成立</text></text>
                     
                 </view>
@@ -114,17 +114,17 @@
                 data-period="社会主义革命建设时期">
                     <text class="title">社会主义革命和建设时期\n<text class="time">从1949年10月至1978年12月党的十一届三中全会召开</text></text>
                     
-                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/4b6e5c00-39e0-460b-a2ea-64d789d9b368.jpeg" mode="aspectFit"></image>
+                    <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页——党政知识库——党史知识—社会主义革命时期.jpeg" mode="aspectFit"></image>
                 </view>
                 <view class="old_period" bindtap="gotoperioddetail" 
                 data-period="改革开放和社会主义现代化建设新时期">
-                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/1695b683-8780-4b8b-91ba-cae273cd5fbd.jpg" mode="aspectFit"></image>
+                    <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页——党政知识库——党史知识——改革开放时期.jpg" mode="aspectFit"></image>
                     <text class="title">改革开放和社会主义建设新时期\n<text class="time">从1978年12月至2012年11月党的十八大召开</text></text>
                 </view>
                 <view class="new_period" bindtap="gotoperioddetail" 
                 data-period="中国特色社会主义建设时期">
                     <text class="title">中国特色社会主义新时期\n<text class="time">从2012年11月至今</text></text>
-                    <image src="https://mp-2f529dfd-46b3-4957-8706-0cd1dbc461a5.cdn.bspapp.com/cloudstorage/2b125019-333f-455b-b446-0ddcdd967150.jpeg" mode="aspectFit"></image>
+                    <image src="http://evinci.oss-cn-hangzhou.aliyuncs.com/evinci/主页——党政知识库——党史知识—中国特色社会主义新时期.jpeg" mode="aspectFit"></image>
                 </view>
             </view>
             <view class="bottom2"></view>
